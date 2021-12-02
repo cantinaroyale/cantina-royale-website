@@ -1,0 +1,14 @@
+.main{
+
+    &-bottom-text{
+        position: absolute;
+        bottom: 80px;
+        left: 80px;
+    }
+
+}
+#main-video {
+    transition: 0.6s all;
+    opacity: 0;
+    z-index:0;   
+  }

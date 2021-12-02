@@ -1,0 +1,9 @@
+.cantina{
+    .gradiant-text{
+        *{
+            background: -webkit-linear-gradient(0deg, #FFAB2E 0%, #FFFFFF 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

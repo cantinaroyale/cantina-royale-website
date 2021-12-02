@@ -1,0 +1,27 @@
+.frame {
+    background: linear-gradient(2.79deg, rgba(1, 130, 249, 0.3) 6.24%, rgba(1, 130, 249, 0) 141.83%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    height: 100%;
+    transition: 0.2s all;
+    margin: 0 auto;
+    position:relative;
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(51, 130, 205, 0.6);
+        width:100%;
+        height:100%;
+        &-content {
+            height:100%;
+            width:100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+    }
+}

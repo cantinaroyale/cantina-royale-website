@@ -1,30 +1,23 @@
 import React from "react";
 import { Surface } from "gl-react-dom";
 import GLTransition from "react-gl-transition";
-import { transitionDirection } from "../../consts";
 import useController from "./useController";
 
 
-const Transitions = () => {
-  const { fromIndex, toIndex, progress, onScroll, stopTransition, transition, transitions, setTransition, images } =
-    useController();
+const Transitions = ({screen}) => {
+  const { fromIndex, toIndex, progress, transition,  images, width, height } =
+    useController(screen);
   return (
-    <div>
-      <Surface width={600} height={600}>
+    <div className='transitions'>
+      <Surface width={width} height={height}>
         <GLTransition
-          from={images[fromIndex]}
-          to={images[toIndex]}
+          from={images[fromIndex] || images[images.length - 1]}
+          to={images[toIndex] || images[images.length - 1]}
           transition={transition}
           progress={progress}
+        
         />
       </Surface>
-      <button onClick={() => onScroll(transitionDirection.prev)}>Prev</button>
-      <button onClick={() => onScroll(transitionDirection.next)}>Next</button>
-      <button onClick={stopTransition}>stop</button>
-      {transitions.map((t, key) => {
-          const selected = t.name === transition.name
-        return <button style ={{background: selected ? 'red' : ''}} key = {key} onClick = {() => setTransition(t)}>{`item-${key}`}</button>
-      })}
     </div>
   );
 };
