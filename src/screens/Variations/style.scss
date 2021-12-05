@@ -1,0 +1,126 @@
+.variations {
+    .subtitle {
+        max-width: 600px;
+        margin-top: 13px;
+    }
+
+    &-ape {
+        position: relative;
+        z-index: 99;
+        width: fit-content;
+
+        &-arrow {
+            position: absolute;
+            left: 100%;
+            top: 49%;
+        }
+    }
+
+    &-video {
+        position: absolute;
+
+        left: 0px;
+        top: -60px;
+
+        &-overlay {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 105%;
+            height: 105%;
+            object-fit: cover;
+            z-index: 9;
+            transform: translate(-50%, -50%);
+
+        }
+
+        &-container {
+            width: 1150px;
+            height: 730px;
+            overflow: hidden;
+
+            &-circle {
+                position: absolute;
+                left: 50%;
+                width: 550px;
+                height: 550px;
+                object-fit: contain;
+                transform: translate(-50%);
+                z-index: 99;
+            }
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            transform: scale(1.6);
+            margin-top: -60px;
+        }
+    }
+
+    #variations-ape-loader {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+
+    &-globe {
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        object-fit: contain;
+        top: -50px;
+        left: -200px;
+    }
+
+    &-flex {
+        margin-top: 40px;
+        position: relative;
+        height: fit-content;
+        width: 1000px;
+        justify-content: flex-start;
+        z-index: 10;
+    }
+
+    .frame {
+        position: relative;
+        z-index: 10;
+        margin: 0px;
+        width: fit-content;
+        height: fit-content;
+        padding: 23px;
+
+        &-inner {
+            padding: 10px;
+
+            &-content {}
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .variations-flex {
+        zoom: 0.8;
+    }
+}
+
+
+@media only screen and (max-width: $mobile) {
+    .variations {
+        &-globe {
+            display: none;
+        }
+
+        &-flex {
+            margin-top: 130px;
+            zoom: 0.3;
+            position: relative;
+            width: auto;
+            margin-right: auto;
+            margin-left: 70px;
+        }
+    }
+}

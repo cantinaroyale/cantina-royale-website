@@ -1,0 +1,28 @@
+{
+  "species": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis",
+    "bottomText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+  },
+  "variations": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+  },
+  "pve": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+  },
+  "pvp": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+  },
+  "scholarships": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+  },
+  "apes": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+  },
+  "cantina": {
+    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+  }
+}

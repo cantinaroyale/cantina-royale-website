@@ -1,0 +1,15 @@
+.pvp {
+    .title {
+        max-width: 900px;
+    }
+
+    .gradiant-text {
+        p {
+
+            background: -webkit-linear-gradient(0deg, #FF2E2E 0%, #FFFFFF 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+}

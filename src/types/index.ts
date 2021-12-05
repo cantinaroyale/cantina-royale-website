@@ -3,3 +3,10 @@ export interface Screen {
     img: string;
     overlay: string;
 }
+
+
+export interface SpeciesSlide {
+    avatar: string;
+    globe:string;
+    text: string;
+}

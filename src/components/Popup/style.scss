@@ -1,0 +1,55 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+    &-blur {
+        backdrop-filter: blur(6px);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background: black;
+        opacity: 0.5;
+
+    }
+
+    .frame {
+        position: relative;
+        z-index: 9;
+    }
+
+    &-content {
+        position: relative;
+        z-index: 99;
+
+        &-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 99;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+}

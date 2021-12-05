@@ -1,27 +1,28 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import ReactMarkdown from "react-markdown";
 import Slider from "../../components/Slider";
-import {  slides } from "../../consts";
-import Slide from "./Slides/Slide";
-
-
+import { SpeciesSlide } from "../../types";
+import { speciesSlides } from "./data";
+import Slide from "./Slide";
 
 function Species() {
+  const { t } = useTranslation("species");
   return (
     <div className="species">
+      <div className="container hidden-flex">
+        {/* <Circles generateLink = {generateLink} /> */}
 
-      <div className = 'container hidden-flex'>
-      {/* <Circles generateLink = {generateLink} /> */}
-      <Slider slides =  {slides}  component = {Slide} />
-      <h2 className="container-title">
-       <strong> Lorem ipsum</strong> dolor ut elit <br /> amet, consectetur sit
-      </h2>
-      <div
-        className='gradiant-text'
-      >
-        <p><strong>Lorem ipsum</strong> dolor sit amet,</p>
-        <p>consectetur adipiscing elit ut lorem,</p>
-        <p>purus sit amet luctus venenatis</p>
-      </div>
+        <h2 className="title">
+          <ReactMarkdown children={t("title")} />
+        </h2>
+        <h4 className="subtitle">
+          <ReactMarkdown children={t("subtitle")} />
+        </h4>
+        {/* <Slider<SpeciesSlide> slides={speciesSlides} component={Slide} /> */}
+        <h5 className="species-bottom-text">
+          <ReactMarkdown children={t("bottomText")} />
+        </h5>
       </div>
     </div>
   );

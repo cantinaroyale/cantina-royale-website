@@ -1,4 +1,9 @@
-.screens{
+.screens {
     position: relative;
-    z-index: 999;
+    z-index: 99;
+
+    .screen {
+        position: relative;
+        z-index: 999;
+    }
 }

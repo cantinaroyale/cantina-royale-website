@@ -1,55 +1,65 @@
-
-
 .species {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
- 
-    &-bottom-text{
+
+    .subtitle {
+        max-width: 650px;
+    }
+
+    .title {
+        margin-bottom: 13px;
+
+    }
+
+
+    &-bottom-text {
         margin-top: auto;
-        max-width: 462px;
+        max-width: 440px;
         font-size: 16px;
         font-weight: 200;
-        line-height: 26px;
-        text-align:center;
-        margin-bottom:40px;
-        strong{
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        strong {
             font-weight: 500;
         }
     }
-   
+
 
     .swiper {
         width: 1215px;
-        padding-right: 95px;
+        padding-right: 100px;
         margin: 0 auto;
         height: 490px;
-        margin-top:60px;
+        margin-top: 60px;
         position: relative;
         z-index: 99;
+
         &-wrapper {
             align-items: center;
         }
 
         &-slide {
             height: 263px;
-            cursor:pointer;
+            cursor: pointer;
             transition: 0.2s all;
 
             .frame {
                 width: 200px;
                 padding: 13px;
-                &-inner{
+
+                &-inner {
                     padding: 6px;
-                   &-content{
-                    background: rgba(0, 0, 0, 0.5);
-                   }
+
+                    &-content {
+                        background: rgba(0, 0, 0, 0.5);
+                    }
                 }
             }
 
             .species-slider-element {
-                width:162px;
+                width: 162px;
+
                 &-text {
                     position: absolute;
                     bottom: -15px;
@@ -111,7 +121,7 @@
                 .species-slider-element {
                     &-text {
 
-                      
+
                         bottom: -22px;
 
                         p {
@@ -152,30 +162,31 @@
 }
 
 @media only screen and (max-width: 1450px) {
-   
-        .species {
-            .swiper{
-                zoom: 0.85;
-            }
-        }
-  }
 
-  @media only screen and (max-width: $mobile) {
-   
     .species {
-        .swiper{
+        .swiper {
+            zoom: 0.85;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+
+    .species {
+        .swiper {
             width: 800px;
             zoom: 0.6;
             padding-right: 40px;
-            position:relative;
-            left:50%;
-            transform:translate(-50%);
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
         }
-        &-bottom-text{
-            font-size:14px;
-            line-height:20px;
-            padding-left:20px;
-            padding-right:20px;
+
+        &-bottom-text {
+            font-size: 14px;
+            line-height: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }
