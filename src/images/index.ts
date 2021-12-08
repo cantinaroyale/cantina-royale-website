@@ -7,6 +7,8 @@ import * as pve from "./pve";
 import * as pvp from "./pvp";
 import * as scholarships from "./scholarships";
 import * as apes from "./apes";
+import * as socials from "./socials";
+import * as partners from "./partners";
 
 const images = {
   species,
@@ -18,6 +20,8 @@ const images = {
   pvp,
   scholarships,
   apes,
+  socials,
+  partners,
 };
 
 export default images;

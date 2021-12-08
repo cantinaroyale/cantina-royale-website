@@ -1,28 +1,46 @@
 {
+  "main": {
+    "gradiantTextLine1": "**The most Epic PVP & PVE Battle Royale**",
+    "gradiantTextLine2": "**game in dark space - Drink, Fight, Raid**",
+    "gradiantTextLine3": "**and Conquer!**"
+  },
   "species": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis",
-    "bottomText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+    "title": "Innumerable Alien Species",
+    "subtitle": "**Peculiar** and **Bizzare**, **Grotesque** and **Abnormal** Life forms from aound the Galaxy!",
+    "bottomText": "**All species** are fully playable as your in game charactaer to fight, raid and battle your way to **Prestige** and **Glory!**"
   },
   "variations": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+    "title": "Head to Toe 3D NFT characters ",
+    "subtitle": "Cantina Royale’s NFTs are all fully functionale playable 3D figures"
   },
   "pve": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+    "title": "PVE Game Mode -  Raid & Loot Gigantic Treasures!",
+    "gradiantTextLine1": "**Skilled enough** to beat the defence systems",
+    "gradiantTextLine2": "and get **prosperous** via **Raids** ?"
   },
   "pvp": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+    "title": "Multiplier PVP Game Mode - Battle Royale!",
+    "gradiantTextLine1": "**Fight & Battle** other **online**",
+    "gradiantTextLine2": "players to  **death!**"
   },
   "scholarships": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+    "title": "Scholarship Programs ",
+    "subtitle": "**“Rent” 3D playable characters (NFTs) owned by others and start playing Cantina Royale for free, or rent your own NFTs and yield profit!**",
+    "gradiantTextLine1": "**Scholarships** are made super simple",
+    "gradiantTextLine2": "and **easy** via the Cantina Royale rental",
+    "gradiantTextLine3": "**marketplace**"
   },
   "apes": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut lorem, purus sit amet luctus venenatis"
+    "title": "Intoducing our first playable 3D playable NFTs inspired by **Board Apes Yacht Club!**",
+    "subtitle": "Coming next - more famous loved NFT collections as 3D fully playable characters - choose your character and play! "
   },
   "cantina": {
-    "title": "**Lorem ipsum** dolor ut elit amet, consectetur sit set ipsum lorem ut purus"
+    "title": "## The Dark Space Cantina Royale Metaverse  ",
+    "gradiantTextLine1": "**Where the lowlifes of the Galaxy come to**",
+    "gradiantTextLine2": "**drink, fight, raid for honor and glory!**"
+  },
+  "partners": {
+    "title": "Partners and Backers",
+    "community": "Community"
   }
 }

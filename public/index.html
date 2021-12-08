@@ -29,23 +29,16 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!-- <script src="Build/WebGL.loader.js"></script>
+    <div id="root"  ></div>
+   
+    <!-- <canvas id="unity-canvas" width=1000 height=1000 style="width: 1000px; height: 1000px; background: transparent; transform: scale(0.75);"></canvas> -->
 
-    <script>
-          createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL.data.gz",
-        frameworkUrl: "Build/WebGL.framework.js.gz",
-        codeUrl: "Build/WebGL.wasm.gz",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Phenomenon Games",
-        productName: "NFT Viewer",
-        productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script> -->
+    <script    src="Build/WebGL.loader.js"></script> 
     
+    <script>
+      // window.createUnityInstance = createUnityInstance      
+    </script> 
+    <!-- <script src="Build/WebGL.framework.js.gz"></script> -->
 
     
     <!--

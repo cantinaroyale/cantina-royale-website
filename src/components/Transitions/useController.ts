@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { transitionDirection } from "../../consts";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { MAIN_TRANSITION_NUMBER, transitionDirection } from "../../consts";
 import { screens } from "../../data/screens";
 import useWindowSize from "../../hooks/useResize";
 const GLTransitions = require("gl-transitions");
@@ -10,8 +10,7 @@ const directions = {
 };
 
 const images = screens.map((m) => m.img);
-console.log(images);
-const baseTransition = GLTransitions[34];
+const baseTransition = GLTransitions[MAIN_TRANSITION_NUMBER];
 function useController(screen: number) {
   const currentScreen = useRef(0);
   const intervalRef: any = useRef(null);

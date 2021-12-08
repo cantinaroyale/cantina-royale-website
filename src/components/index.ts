@@ -1,7 +1,7 @@
+import Indicator from "./Indicator";
 import Overlays from "./Overlays";
 import Popup from "./Popup";
-import Screens from "./Screens";
 import Scroller from "./Scroller";
-import Transitions from "./Transitions";
+import VideoPopup from "./VideoPopup";
 
-export { Popup, Scroller, Transitions, Screens, Overlays };
+export { Popup, Scroller, Overlays, VideoPopup, Indicator };

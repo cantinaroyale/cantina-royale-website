@@ -1,4 +1,12 @@
 .cantina {
+    &-title {
+        font-size: 60px;
+        font-weight: 500;
+        position: absolute;
+        top: 40%;
+        transform: translate(0, -50%);
+    }
+
     .gradiant-text {
 
         * {

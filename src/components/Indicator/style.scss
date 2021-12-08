@@ -1,0 +1,153 @@
+.indicator {
+    position: fixed;
+    right: 65px;
+    z-index: 10000;
+    top: 28%;
+
+    &-line {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 0px;
+
+        height: 80vh;
+
+
+    }
+
+    &-section {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        height: 50px;
+
+        &-btn {
+
+            font-weight: 300;
+            white-space: nowrap;
+
+            text-align: right;
+            flex: 1;
+            padding-right: 50px;
+            opacity: 0;
+            transition: 0.3s all;
+            font-size: 14px;
+            line-height: 16px;
+            color: white;
+        }
+
+        &-figure {
+            position: relative;
+            top: 10px;
+            transform: rotate(45deg);
+
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &-small {
+                width: 3px;
+                height: 3px;
+                background: white;
+            }
+
+            &-medium {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 16.67%, rgba(255, 255, 255, 0) 97.92%);
+                width: 16.97px;
+                height: 16.97px;
+                transition: 0.2s all;
+
+            }
+
+            &-big {
+                transition: 0.2s all;
+                opacity: 0;
+                background: linear-gradient(135deg,
+                        rgba(1, 130, 249, 0.2) 16.67%,
+                        rgba(1, 130, 249, 0) 97.92%);
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        &:hover {
+            .indicator-section-btn {
+                color: #0182f9;
+            }
+        }
+
+    }
+
+    #selected-section {
+        .indicator-section {
+
+            &-btn {
+                color: #0182f9;
+                font-weight: bold;
+            }
+
+            &-figure {
+                &-medium {
+                    background: linear-gradient(135deg, rgba(1, 130, 249, 0.5) 16.67%, rgba(1, 130, 249, 0) 97.92%);
+                }
+
+                &-big {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+    &-active {
+        .indicator-section-name {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &:hover {
+        .indicator {
+            &-section {
+                &-btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: $mobile) {
+    .indicator {
+        right: 25px;
+
+        &-section {
+            height: 40px;
+
+            &-figure {
+                &-medium {
+                    width: 12px;
+                    height: 12px;
+                }
+
+                &-big {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+
+            &-btn {
+                display: none;
+            }
+        }
+    }
+}

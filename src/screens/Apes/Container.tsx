@@ -1,13 +1,16 @@
-import React from "react";
+import { CSSProperties } from "react";
 import Frame from "../../components/Frame";
-import Spinner from "../../components/Spinner";
+import UnityElement from "../../components/UnityElement";
+import { UNITY_INTERVAL } from "../../consts";
 
 interface Props {
   smallApe: string;
   coins: string;
   id?: string;
+  loadUnity?: boolean;
+  canvasId: string;
 }
-function Container({ smallApe, coins, id = "" }: Props) {
+function Container({ smallApe, coins, id = "", loadUnity, canvasId }: Props) {
   return (
     <div className={`ape-container`} id={id}>
       <figure
@@ -19,13 +22,14 @@ function Container({ smallApe, coins, id = "" }: Props) {
       <figure className="ape-figure ape-figure-top-small selected  delay-3" />
       <figure className="ape-figure ape-figure-top-big  selected delay-4" />
       <img src={smallApe} className="ape-small-ape selected  delay-5" alt="" />
-      <Frame className="ape-model">
-        <Spinner id={`${id}-loader`} />
-        <div
-          style={{ width: 250, height: 330, opacity: 0 }}
-          id={`${id}-model`}
-        ></div>
-      </Frame>
+      <UnityElement
+        play={loadUnity}
+        canvasId={canvasId}
+        loadTimeout={1000}
+        width={250}
+        height={330}
+        intervalTime={UNITY_INTERVAL}
+      />
       <Frame className="ape-coins selected  delay-6">
         <img src={coins} alt="" />
       </Frame>

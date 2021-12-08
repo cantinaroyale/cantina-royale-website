@@ -294,6 +294,7 @@ const UnityLoader = UnityLoader || {
       });
   },
   instantiate: function (e, t, r) {
+
     function n(e, r) {
       if ("string" == typeof e && !(e = document.getElementById(e))) return !1;
       (e.innerHTML = ""),

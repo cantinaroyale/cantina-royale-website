@@ -1,17 +1,30 @@
-import React from "react";
-import ReactPlayer from 'react-player'
+import React, { forwardRef } from "react";
 
 interface Props {
-  url: string;
   id?: string;
   className?: string;
+  poster?: string;
+  src?: string;
+  ref?: any;
 }
 
-
-function Video({ url , id = '', className = ''}: Props) {
+const Video = forwardRef((props: Props, ref: any) => {
+  const { id = "", className = "", poster = "", src } = props;
   return (
-    <ReactPlayer id ={id} className = {className ? `${className} video`  :'video'}  url = {url} />
+    <video
+      ref={ref}
+      loop
+      muted
+      id={id}
+      playsInline
+      preload="auto"
+      className={className}
+      poster={poster}
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
   );
-}
+});
 
 export default Video;

@@ -1,4 +1,3 @@
-import React from "react";
 import { Surface } from "gl-react-dom";
 import useController from "./useController";
 import { useStore } from "../../store";

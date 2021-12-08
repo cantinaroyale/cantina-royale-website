@@ -1,14 +1,31 @@
-.main{
+.main {
 
-    &-bottom-text{
-        position: absolute;
-        bottom: 80px;
-        left: 80px;
+
+    .page-bottom-flex {
+        z-index: 99;
+        position: relative;
+    }
+
+    .gradiant-text {
+
+
+        * {
+            background: -webkit-linear-gradient(0deg, #0182F9 0%, #FFFFFF 70%);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
     }
 
 }
+
 #main-video {
     transition: 0.6s all;
     opacity: 0;
-    z-index:0;   
-  }
+    z-index: 0;
+}

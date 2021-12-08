@@ -1,0 +1,75 @@
+.app-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all;
+
+    &-bg {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+
+        transform: scale(1.05);
+        animation: zoomOutBg 4s linear 0.3s forwards;
+        transform-origin: center;
+    }
+
+    &-img {
+        width: 725.91px;
+        height: 513.3px;
+        object-fit: contain;
+        position: relative;
+        z-index: 10;
+        animation: zoomOutImage 4s linear 0.3s forwards;
+    }
+
+    &-overlay {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        z-index: 5;
+    }
+
+}
+
+@keyframes zoomOutImage {
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes zoomOutBg {
+    0% {
+        transform: scale(1.05);
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}

@@ -13,6 +13,23 @@
         &-container {
             width: fit-content;
             position: relative;
+
+            .unity {
+                width: fit-content;
+                position: relative;
+                padding: 20px;
+
+                .frame-inner {
+                    padding: 10px;
+                }
+
+                .spinner {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                }
+            }
         }
 
         &-figure {
@@ -52,22 +69,7 @@
 
         }
 
-        &-model {
-            width: fit-content;
-            position: relative;
-            padding: 20px;
 
-            .frame-inner {
-                padding: 10px;
-            }
-
-            .spinner {
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                top: 50%;
-            }
-        }
 
         &-small-ape {
             position: absolute;
@@ -114,7 +116,7 @@
 
 
 
-    #ape-first-container {
+    #ape-left-container {
         .ape-figure {
             &-bottom {
                 &-small {
@@ -131,9 +133,6 @@
                     background: #FFF620;
                 }
 
-
-
-
                 &-big {
                     background: linear-gradient(205.96deg, #FFAB2E 0%, #FAF6CF 131.73%);
                     opacity: 0.8;
@@ -141,19 +140,19 @@
             }
         }
 
-        .ape-model {
-            .frame {
-                &-inner {
-                    &-content {
-                        background: linear-gradient(167.13deg, rgba(23, 230, 183, 0.5) 32.46%, rgba(23, 230, 183, 0) 91.81%);
-                    }
+        .unity {
+            .frame-inner {
+                &-content {
+                    background: linear-gradient(167.13deg, rgba(23, 230, 183, 0.5) 32.46%, rgba(23, 230, 183, 0) 91.81%);
                 }
             }
         }
 
+
     }
 
-    #ape-second-container {
+
+    #ape-right-container {
         .ape-figure {
             &-bottom {
                 &-small {
@@ -177,14 +176,13 @@
             }
         }
 
-        .ape-model {
-            .frame {
-                &-inner {
-                    &-content {
-                        background: linear-gradient(167.13deg, rgba(111, 93, 112, 0.5) 32.46%, rgba(1, 130, 249, 0.5) 91.81%);
-                    }
+        .unity {
+            .frame-inner {
+                &-content {
+                    background: linear-gradient(167.13deg, rgba(111, 93, 112, 0.5) 32.46%, rgba(1, 130, 249, 0.5) 91.81%);
                 }
             }
+
         }
     }
 }

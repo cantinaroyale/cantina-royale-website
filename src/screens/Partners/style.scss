@@ -1,0 +1,99 @@
+.partners {
+    padding-bottom: 80px;
+
+    &-flex {
+        margin-top: 110px;
+    }
+
+    &-list {
+        margin-bottom: 30px;
+        width: 1000px;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            padding: 0px 0px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+                width: auto;
+                height: 100%;
+                max-width: 85%;
+
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &-community {
+        margin-top: auto;
+
+        &-title {
+            background: -webkit-linear-gradient(90deg, #0182F9 0%, #FFFFFF 60%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        &-list {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-item {
+                width: 60px;
+                height: 60px;
+                margin-right: 40px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: $mobile) {
+    .partners {
+        &-list {
+            zoom: 0.28;
+
+
+        }
+
+        &-community {
+            &-list {
+                zoom: 0.5;
+            }
+        }
+    }
+}

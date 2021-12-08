@@ -18,7 +18,8 @@ const animations = {
   fadeInUp: `${base} animate__fadeInUp`,
   fadeInTopRight: `${base} animate__fadeInTopRight`,
   fadeInTopLeft: `${base} animate__fadeInTopLeft`,
-  fadeOutRight: `animate__fadeOutRight`,
+  fadeOutRight: `${base} animate__fadeOutRight`,
+  fadeOutLeft: `${base} animate__fadeOutLeft`,
   fadeInBottomRight: `${base} animate__fadeInBottomRight`,
   fadeInBottomLeft: `${base} animate__fadeInBottomLeft`,
   flip: `${base} animate__flipInX`,
@@ -28,7 +29,7 @@ const animations = {
   slideInRight: `${base} animate__slideInRight`,
   slideInUp: `${base} animate__slideInUp`,
   zoomOut: `${base} animate__zoomOut`,
-  fadeOut: `animate__fadeOut`,
+  fadeOut: `${base} animate__fadeOut animate__faster animate__delay-0s`,
 };
 
 export default animations;
