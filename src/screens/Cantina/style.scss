@@ -1,10 +1,13 @@
 .cantina {
-    &-title {
-        font-size: 60px;
-        font-weight: 500;
+    #cantina-title {
+
         position: absolute;
         top: 40%;
         transform: translate(0, -50%);
+        left: 80px;
+
+        font-size: 60px;
+        font-weight: 500;
     }
 
     .gradiant-text {

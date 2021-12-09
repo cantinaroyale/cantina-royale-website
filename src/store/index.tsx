@@ -26,7 +26,6 @@ const Store = ({ children }: IProps) => {
       setActiveScreen(index);
     }
   };
-  console.log(transitionInProgress);
 
   const value = {
     activeScreen,

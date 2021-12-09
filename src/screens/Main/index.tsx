@@ -10,7 +10,7 @@ function Main({ isActive, appLoaded }: ScreenComponentProps) {
 
   return (
     <div
-      className={`main screen ${
+      className={`main screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >

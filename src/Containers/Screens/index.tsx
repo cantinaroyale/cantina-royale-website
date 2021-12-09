@@ -1,54 +1,51 @@
-import { useEffect, useRef } from "react";
 import animations from "../../animations";
-import { SCROLL_DURATION } from "../../consts";
 import { screens } from "../../data";
 import { useStore } from "../../store";
-const { FullPage, Slide } = require("react-full-page");
-
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 function Screens() {
-  const ref = useRef<any>(null);
-  const { selectScreen, activeScreen, appLoaded } = useStore();
-  const beforeChange = ({ from, to }: { from: number; to: number }) => {
-    selectScreen(to);
+  const { selectScreen, activeScreen, appLoaded, transitionInProgress } =
+    useStore();
+
+  const onUp = () => {
+    if (!transitionInProgress && activeScreen > 0) {
+      selectScreen(activeScreen - 1);
+    }
+  };
+  const onDown = () => {
+    if (!transitionInProgress && activeScreen < screens.length - 1) {
+      selectScreen(activeScreen + 1);
+    }
   };
 
-  useEffect(() => {
-    if (ref.current) {
-      const currentSlide = ref.current.getCurrentSlideIndex();
-      if (currentSlide !== activeScreen) {
-        ref.current.scrollToSlide(activeScreen);
-      }
-    }
-  }, [activeScreen]);
-
   return (
-    <div className="screens" style={{ opacity: appLoaded ? 1 : 0 }}>
-      <FullPage
-        ref={ref}
-        duration={SCROLL_DURATION}
-        beforeChange={beforeChange}
-        initialSlide={0}
-      >
+    <ReactScrollWheelHandler
+      upHandler={onUp}
+      downHandler={onDown}
+      wheelConfig={[7, 30, 0.05] as any}
+    >
+      <div className="screens" style={{ opacity: appLoaded ? 1 : 0 }}>
         {screens.map((screen, index) => {
           const { component: Component, overlay } = screen;
           const isActive = activeScreen === index;
           return (
-            <Slide key={index}>
-              <div className="slide">
-                <img
-                  src={overlay}
-                  alt="overlay"
-                  className={`overlay ${
-                    isActive ? animations.fadeIn : animations.fadeOut
-                  }`}
-                />
-                <Component isActive={isActive} appLoaded={appLoaded} />
-              </div>
-            </Slide>
+            <div
+              className="screen"
+              style={{ zIndex: isActive ? 99 : 0 }}
+              key={index}
+            >
+              <img
+                src={overlay}
+                alt="overlay"
+                className={`screen-overlay ${
+                  isActive ? animations.fadeIn : animations.fadeOut
+                }`}
+              />
+              <Component isActive={isActive} appLoaded={appLoaded} />
+            </div>
           );
         })}
-      </FullPage>
-    </div>
+      </div>
+    </ReactScrollWheelHandler>
   );
 }
 

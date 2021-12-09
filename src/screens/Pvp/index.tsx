@@ -5,6 +5,7 @@ import animations from "../../animations";
 import { VideoPopup } from "../../components";
 
 import Frame from "../../components/Frame";
+import Title from "../../components/Title";
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import videos from "../../videos";
@@ -14,7 +15,7 @@ function Pvp({ isActive }: ScreenComponentProps) {
   const { t } = useTranslation("pvp");
   return (
     <div
-      className={`pvp screen ${
+      className={`pvp screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
@@ -24,15 +25,17 @@ function Pvp({ isActive }: ScreenComponentProps) {
         poster={images.main.bg}
         close={() => setShowPopup(false)}
       />
-      <h3 className={`title`}>
-        <ReactMarkdown children={t("title")} />
-      </h3>
+      <Title
+        text={<ReactMarkdown children={t("title")} />}
+        isActive={isActive}
+      />
+
       <div className="page-bottom-flex">
         <div
           className={`gradiant-text ${
             isActive
-              ? `${animations.fadeInLeft} smallDelay`
-              : animations.fadeOut
+              ? `${animations.fadeInUp} smallDelay`
+              : animations.fadeOutDown
           }`}
         >
           <ReactMarkdown children={t("gradiantTextLine1")} />
@@ -42,7 +45,9 @@ function Pvp({ isActive }: ScreenComponentProps) {
         <Frame
           id="pvp-bottom-frame"
           className={`video-preview ${
-            isActive ? `${animations.fadeInUp} smallDelay` : animations.fadeOut
+            isActive
+              ? `${animations.fadeInUp} smallDelay`
+              : animations.fadeOutDown
           }`}
           onClick={() => setShowPopup(true)}
         >

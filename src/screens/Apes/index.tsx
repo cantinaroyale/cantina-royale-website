@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import Subtitle from "../../components/Subtitle";
+import Title from "../../components/Title";
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import Container from "./Container";
@@ -10,16 +12,18 @@ function Apes({ isActive }: ScreenComponentProps) {
 
   return (
     <div
-      className={`apes screen ${
+      className={`apes screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
-      <h2 className="title">
-        <ReactMarkdown children={t("title")} />
-      </h2>
-      <h4 className="subtitle">
-        <ReactMarkdown children={t("subtitle")} />
-      </h4>
+      <Title
+        text={<ReactMarkdown children={t("title")} />}
+        isActive={isActive}
+      />
+      <Subtitle
+        text={<ReactMarkdown children={t("subtitle")} />}
+        isActive={isActive}
+      />
 
       <div className="apes-flex">
         <Container
@@ -28,6 +32,7 @@ function Apes({ isActive }: ScreenComponentProps) {
           coins={images.apes.coins}
           smallApe={images.apes.ape1}
           id="ape-left-container"
+          className={isActive ? animations.fadeInLeft : animations.fadeOutLeft}
         />
         <Container
           canvasId="right-ape"
@@ -35,6 +40,9 @@ function Apes({ isActive }: ScreenComponentProps) {
           coins={images.apes.coins}
           smallApe={images.apes.ape2}
           id="ape-right-container"
+          className={
+            isActive ? animations.fadeInRight : animations.fadeOutRight
+          }
         />
       </div>
     </div>

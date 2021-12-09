@@ -11,7 +11,7 @@ const directions = {
 const SCROLL_DURATION = 1100;
 const MAIN_TRANSITION_NUMBER = 34;
 const FIRST_TRANSITION_NUMBER = 1;
-const APP_LOADER_TIMEOUT = 0;
+const APP_LOADER_TIMEOUT = 4500;
 const UNITY_INTERVAL = 3000;
 
 export {

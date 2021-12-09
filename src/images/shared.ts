@@ -7,8 +7,12 @@ import indicatorLine from "../assets/images/home/indicator-line.png";
 import curve1 from "../assets/images/home/shared/curve-1.png";
 import curve2 from "../assets/images/home/shared/curve-2.png";
 import curve3 from "../assets/images/home/shared/curve-3.png";
+import mobile from "../assets/images/home/shared/mobile.png";
+import phone from "../assets/images/home/shared/phone.svg";
 
 export {
+  phone,
+  mobile,
   close,
   play,
   appLoaderLogo,

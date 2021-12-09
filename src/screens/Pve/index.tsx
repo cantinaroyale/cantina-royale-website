@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
 import { VideoPopup } from "../../components";
 import Frame from "../../components/Frame";
+import Title from "../../components/Title";
 
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
@@ -15,7 +16,7 @@ function Pve({ isActive }: ScreenComponentProps) {
 
   return (
     <div
-      className={`pve screen ${
+      className={`pve screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
@@ -26,9 +27,10 @@ function Pve({ isActive }: ScreenComponentProps) {
         close={() => setShowPopup(false)}
       />
 
-      <h3 className={`title`}>
-        <ReactMarkdown children={t("title")} />
-      </h3>
+      <Title
+        text={<ReactMarkdown children={t("title")} />}
+        isActive={isActive}
+      />
       <div className="page-bottom-flex">
         <div
           className={`gradiant-text ${

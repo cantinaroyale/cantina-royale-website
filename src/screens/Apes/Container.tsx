@@ -1,4 +1,3 @@
-import animations from "../../animations";
 import Frame from "../../components/Frame";
 import UnityElement from "../../components/UnityElement";
 import { UNITY_INTERVAL } from "../../consts";
@@ -9,15 +8,18 @@ interface Props {
   id?: string;
   loadUnity?: boolean;
   canvasId: string;
+  className?: string;
 }
-function Container({ smallApe, coins, id = "", loadUnity, canvasId }: Props) {
+function Container({
+  smallApe,
+  coins,
+  id = "",
+  loadUnity,
+  canvasId,
+  className = "",
+}: Props) {
   return (
-    <div
-      className={`${
-        loadUnity ? animations.fadeInUp : animations.fadeOut
-      } ape-container`}
-      id={id}
-    >
+    <div className={`${className} ape-container`} id={id}>
       <figure
         className={`ape-figure ape-figure-bottom-small selected  delay-1`}
       />

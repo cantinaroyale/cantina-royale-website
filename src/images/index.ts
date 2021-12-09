@@ -9,6 +9,7 @@ import * as scholarships from "./scholarships";
 import * as apes from "./apes";
 import * as socials from "./socials";
 import * as partners from "./partners";
+import * as navbar from "./navbar";
 
 const images = {
   species,
@@ -22,6 +23,7 @@ const images = {
   apes,
   socials,
   partners,
+  navbar,
 };
 
 export default images;

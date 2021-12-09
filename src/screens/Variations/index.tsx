@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import Subtitle from "../../components/Subtitle";
+import Title from "../../components/Title";
 import UnityElement from "../../components/UnityElement";
 import Video from "../../components/Video";
 import { UNITY_INTERVAL } from "../../consts";
@@ -26,16 +28,19 @@ function Variations({ isActive }: ScreenComponentProps) {
 
   return (
     <div
-      className={`variations screen ${
+      className={`variations screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
-      <h2 className={`title`}>
-        <ReactMarkdown children={t("title")} />
-      </h2>
-      <h5 className={`subtitle`}>
-        <ReactMarkdown children={t("subtitle")} />
-      </h5>
+      <Title
+        text={<ReactMarkdown children={t("title")} />}
+        isActive={isActive}
+      />
+
+      <Subtitle
+        text={<ReactMarkdown children={t("subtitle")} />}
+        isActive={isActive}
+      />
       <div className="variations-flex">
         <div className="variations-ape">
           <img
@@ -59,13 +64,17 @@ function Variations({ isActive }: ScreenComponentProps) {
             />
           </UnityElement>
         </div>
-        <div className="variations-video">
+        <div
+          className={`variations-video ${
+            isActive ? animations.fadeIn : animations.fadeOut
+          }`}
+        >
           <img
             src={images.variations.overlay}
             className="variations-video-overlay"
             alt=""
           />
-          <div className="variations-video-container">
+          <div className={`variations-video-container`}>
             <img
               src={images.variations.circle}
               className="variations-video-container-circle"

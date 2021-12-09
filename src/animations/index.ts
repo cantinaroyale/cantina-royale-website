@@ -29,7 +29,11 @@ const animations = {
   slideInRight: `${base} animate__slideInRight`,
   slideInUp: `${base} animate__slideInUp`,
   zoomOut: `${base} animate__zoomOut`,
-  fadeOut: `${base} animate__fadeOut animate__faster animate__delay-0s`,
+  fadeOut: `${base} animate__fadeOut`,
+  fadeOutDown: `${base} animate__fadeOutDown`,
+  fadeOutUp: `${base} animate__fadeOutUp animate__faster animate__delay-0s`,
+  slideOutLeft: `${base} animate__slideOutLeft animate__faster animate__delay-0s`,
+  slideOutDown: `${base} animate__slideOutDown animate__faster animate__delay-0s`,
 };
 
 export default animations;

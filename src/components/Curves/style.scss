@@ -1,6 +1,5 @@
 .curves {
     position: absolute;
-    left: 0px;
     top: 0px;
     width: 1400px;
     opacity: 0.8;
@@ -21,15 +20,15 @@
 
     &-curve {
         &-1 {
-            left: -300px;
+            left: -5%;
         }
 
         &-2 {
-            left: -300px;
+            left: -10%;
         }
 
         &-3 {
-            left: 850px;
+            left: 68%;
         }
     }
 

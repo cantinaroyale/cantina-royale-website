@@ -39,7 +39,7 @@ function useController() {
       if (isVideo) {
         setTimeout(() => {
           setFromIndex(screen);
-        }, 20);
+        }, 100);
       }
       const interval = isVideo ? 12 : 8;
       const limit = isVideo ? 1000000 : 1;
@@ -68,30 +68,40 @@ function useController() {
     [startTransition]
   );
 
+  const handleProgress = useCallback(
+    (screen) => {
+      if (progress === 0) {
+        return;
+      }
+      if (currentScreen.current === 0) {
+        stopTransition();
+      } else {
+        onTransitionEnded(screen);
+      }
+    },
+    [onTransitionEnded, progress]
+  );
+
   useEffect(() => {
     if (activeScreen === currentScreen.current) {
       return;
     }
-    const isVideo = activeScreen === 0;
-    if (progress > 0) {
-      console.log("testttt");
-      onTransitionEnded(activeScreen);
-    }
 
+    const isVideo = activeScreen === 0;
+
+    handleProgress(activeScreen);
     if (activeScreen > currentScreen.current) {
       onScroll(activeScreen, transitionDirection.next, isVideo);
     } else {
       onScroll(activeScreen, transitionDirection.prev, isVideo);
     }
     currentScreen.current = activeScreen;
-  }, [onScroll, activeScreen, progress, onTransitionEnded]);
+  }, [onScroll, activeScreen, progress, onTransitionEnded, handleProgress]);
 
   const stopTransition = () => {
     clearInterval(intervalRef.current);
     setProgress(0);
   };
-
-  console.log(activeScreen);
 
   return {
     fromIndex,

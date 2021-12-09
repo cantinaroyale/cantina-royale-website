@@ -3,24 +3,33 @@ import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
 import Frame from "../../components/Frame";
+import Subtitle from "../../components/Subtitle";
+import Title from "../../components/Title";
 import { ScreenComponentProps } from "../../types";
 
 function Scholarships({ isActive }: ScreenComponentProps) {
   const { t } = useTranslation("scholarships");
   return (
     <div
-      className={`scholarships screen ${
+      className={`scholarships screen-content ${
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
-      <h3 className={`title`}>
-        <ReactMarkdown children={t("title")} />
-      </h3>
-      <h5 className="subtitle">
-        <ReactMarkdown children={t("subtitle")} />
-      </h5>
+      <Title
+        text={<ReactMarkdown children={t("title")} />}
+        isActive={isActive}
+      />
+      <Subtitle
+        text={<ReactMarkdown children={t("subtitle")} />}
+        isActive={isActive}
+      />
+
       <div className="page-bottom-flex">
-        <div className="gradiant-text">
+        <div
+          className={`gradiant-text ${
+            isActive ? animations.fadeInUp : animations.fadeOutUp
+          }`}
+        >
           <ReactMarkdown children={t("gradiantTextLine1")} />
           <ReactMarkdown children={t("gradiantTextLine2")} />
           <ReactMarkdown children={t("gradiantTextLine3")} />
@@ -28,7 +37,7 @@ function Scholarships({ isActive }: ScreenComponentProps) {
 
         <Frame
           id="scholarships-frame"
-          className={`animate__delay-2s base-delay`}
+          className={isActive ? animations.fadeInUp : animations.fadeOutUp}
         >
           <a href="/" className="scholarships-medium">
             <p>Medium Post Title</p>

@@ -12,6 +12,7 @@ interface Props {
   height: number;
   children?: ReactNode;
   intervalTime: number;
+  className?: string;
 }
 
 function UnityElement({
@@ -23,6 +24,7 @@ function UnityElement({
   height,
   children,
   intervalTime = 0,
+  className = "",
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const timeoutRef = useRef<any>(null);
@@ -30,10 +32,6 @@ function UnityElement({
   const [isLoading, setIsLoading] = useState(true);
   const [instance, setInstance] = useState<any>(null);
   const randomize = (instance: any, intervalTime: number) => {
-    if (intervalRef.current) {
-      return;
-    }
-
     intervalRef.current = setInterval(() => {
       try {
         if (instance) {
@@ -49,7 +47,6 @@ function UnityElement({
     if (!instance) {
       return;
     }
-    console.log("kill");
     clearTimeout(timeoutRef.current);
     clearInterval(intervalRef.current);
 
@@ -92,8 +89,14 @@ function UnityElement({
     }
   }, [instance, intervalTime, loadTimeout, play, startInstance]);
 
+  useEffect(() => {
+    return () => {
+      killInstance(instance);
+    };
+  }, [instance]);
+
   return (
-    <Frame className="unity" id={containerId}>
+    <Frame className={`unity ${className}`} id={containerId}>
       {isLoading && <Spinner />}
       <canvas
         ref={canvasRef}
