@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { ReactNode } from "react-markdown/lib/react-markdown";
+import { ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import Frame from "../Frame";
 import Spinner from "../Spinner";
 import { unityConfig } from "./config";
@@ -19,75 +18,79 @@ function UnityElement({
   containerId = "",
   canvasId,
   play,
-  loadTimeout,
+  loadTimeout = 0,
   width,
   height,
   children,
-  intervalTime,
+  intervalTime = 0,
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const timeoutRef = useRef<any>(null);
   const intervalRef = useRef<any>(null);
-  const unmountInterval = useRef<any>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const instance = useRef<any>(null);
+  const [instance, setInstance] = useState<any>(null);
+  const randomize = (instance: any, intervalTime: number) => {
+    if (intervalRef.current) {
+      return;
+    }
 
-  const randomize = useCallback(() => {
     intervalRef.current = setInterval(() => {
-      if (!instance.current) {
-        return;
-      }
-      instance.current.SendMessage("ShowcaseManager", "RandomiseCharacter");
+      try {
+        if (instance) {
+          instance.SendMessage("ShowcaseManager", "RandomiseCharacter");
+        } else {
+          clearInterval(intervalRef.current);
+        }
+      } catch (error) {}
     }, intervalTime);
-  }, [intervalTime, instance]);
+  };
 
-  const killUnity = useCallback(() => {
-    clearTimeout(timeoutRef.current);
-    clearInterval(intervalRef.current);
-
-    if (!instance.current) {
+  const killInstance = (instance: any) => {
+    if (!instance) {
       return;
     }
     console.log("kill");
-    instance.current.Quit();
-    instance.current = null;
+    clearTimeout(timeoutRef.current);
+    clearInterval(intervalRef.current);
 
+    instance.Quit();
+    setInstance(null);
     setTimeout(() => {
       setIsLoading(true);
     }, 400);
-  }, []);
+  };
 
-  const createInstance = useCallback(async () => {
-    clearInterval(unmountInterval.current);
-    instance.current = await (window as any).createUnityInstance(
+  const createInstance = useCallback(async (instance: any, time: number) => {
+    const res = await (window as any).createUnityInstance(
       canvasRef.current,
       unityConfig
     );
-    console.log();
-
+    setInstance(res);
     setIsLoading(false);
-    // randomize();
+    randomize(res, time);
   }, []);
 
-  const onPageLoaded = useCallback(() => {
-    if (play && instance.current) {
-      // randomize();
-    } else if (canvasRef.current && play && !instance.current) {
-      timeoutRef.current = setTimeout(() => {
-        createInstance();
-      }, loadTimeout);
-    }
-  }, [createInstance, loadTimeout, play]);
-
-  useEffect(() => {
-    onPageLoaded();
-  }, [onPageLoaded]);
+  const startInstance = useCallback(
+    (instance: any, time: number, interval: number) => {
+      if (instance) {
+        return;
+      }
+      if (canvasRef.current) {
+        timeoutRef.current = setTimeout(() => {
+          createInstance(instance, interval);
+        }, time);
+      }
+    },
+    [createInstance]
+  );
 
   useEffect(() => {
     if (!play) {
-      killUnity();
+      killInstance(instance);
+    } else if (play) {
+      startInstance(instance, loadTimeout, intervalTime);
     }
-  }, [killUnity, play]);
+  }, [instance, intervalTime, loadTimeout, play, startInstance]);
 
   return (
     <Frame className="unity" id={containerId}>

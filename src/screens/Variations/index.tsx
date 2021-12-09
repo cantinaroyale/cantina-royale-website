@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-
 import UnityElement from "../../components/UnityElement";
 import Video from "../../components/Video";
 import { UNITY_INTERVAL } from "../../consts";
@@ -17,8 +16,8 @@ function Variations({ isActive }: ScreenComponentProps) {
 
   useEffect(() => {
     const handleVideo = async () => {
+      await delay(500);
       if (isActive && videoRef.current) {
-        await delay(500);
         videoRef.current.play();
       }
     };

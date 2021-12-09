@@ -1,7 +1,5 @@
 import { Surface } from "gl-react-dom";
 import useController from "./useController";
-import { useStore } from "../../store";
-
 import GLTransition from "react-gl-transition";
 
 const Transitions = () => {

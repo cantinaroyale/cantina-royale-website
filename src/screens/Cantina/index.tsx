@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import { Curves } from "../../components";
 import { ScreenComponentProps } from "../../types";
 
 function Cantina({ isActive }: ScreenComponentProps) {
@@ -11,7 +12,7 @@ function Cantina({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
-      {/* <Circles generateLink = {generateLink} /> */}
+      <Curves show={isActive} />
       <ReactMarkdown
         children={t("title")}
         className="cantina-title"

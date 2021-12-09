@@ -1,11 +1,16 @@
 import { useTranslation } from "react-i18next";
 import animations from "../../animations";
 import { partners, socials } from "../../data";
+import { ScreenComponentProps } from "../../types";
 
-function Partners() {
+function Partners({ isActive }: ScreenComponentProps) {
   const { t } = useTranslation("partners");
   return (
-    <div className="partners screen">
+    <div
+      className={`partners screen ${
+        isActive ? animations.fadeIn : animations.fadeOut
+      }`}
+    >
       <h3 className={`${animations.slideInUp} title`}>{t("title")}</h3>
 
       <div className="partners-flex">

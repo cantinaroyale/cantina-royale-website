@@ -8,8 +8,9 @@ const directions = {
   [transitionDirection.prev]: [0, 1],
 };
 
-const SCROLL_DURATION = 1000;
+const SCROLL_DURATION = 1100;
 const MAIN_TRANSITION_NUMBER = 34;
+const FIRST_TRANSITION_NUMBER = 1;
 const APP_LOADER_TIMEOUT = 0;
 const UNITY_INTERVAL = 3000;
 
@@ -20,4 +21,5 @@ export {
   APP_LOADER_TIMEOUT,
   directions,
   UNITY_INTERVAL,
+  FIRST_TRANSITION_NUMBER,
 };

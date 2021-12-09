@@ -1,0 +1,39 @@
+.curves {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1400px;
+    opacity: 0.8;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+    pointer-events: none;
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: auto;
+
+    }
+
+
+
+    &-curve {
+        &-1 {
+            left: -300px;
+        }
+
+        &-2 {
+            left: -300px;
+        }
+
+        &-3 {
+            left: 850px;
+        }
+    }
+
+    .small-delay {
+        animation-delay: 0.5s;
+    }
+}

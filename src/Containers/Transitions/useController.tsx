@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { MainVideo } from "../../components";
 import {
   MAIN_TRANSITION_NUMBER,
   transitionDirection,
@@ -8,78 +9,89 @@ import { screensImages } from "../../data/screens";
 import { useStore } from "../../store";
 const GLTransitions = require("gl-transitions");
 
+let images: any = screensImages;
+images[0] = <MainVideo />;
 const baseTransition = GLTransitions[MAIN_TRANSITION_NUMBER];
 function useController() {
-  const { activeScreen, fromTransitionIndex, ToTransitionIndex } = useStore();
-  const currentScreen = useRef(0);
+  const { activeScreen, setTransitionInProgress } = useStore();
+  const currentScreen = useRef(-1);
   const intervalRef: any = useRef(null);
   const [progress, setProgress] = useState(0);
   const [fromIndex, setFromIndex] = useState(0);
   const [toIndex, setToIndex] = useState(1);
   const [transition, setTransition] = useState(baseTransition);
-  const onTransitionEnded = useCallback((direction) => {
-    stopTransition();
-    if (direction === transitionDirection.next) {
-      setFromIndex((prevState) => prevState + 1);
-      setToIndex((prevState) => prevState + 1);
-    } else {
-      setFromIndex((prevState) => prevState - 1);
-      setToIndex((prevState) => prevState + 1);
-    }
-  }, []);
+
+  const onTransitionEnded = useCallback(
+    (screen) => {
+      setTransitionInProgress(false);
+      stopTransition();
+      setFromIndex(screen);
+    },
+    [setTransitionInProgress]
+  );
 
   const startTransition = useCallback(
-    (direction) => {
-      const transitionIsRunning = progress !== 0;
-      if (transitionIsRunning) {
-        return;
+    async (screen, isVideo) => {
+      if (!isVideo) {
+        setTransitionInProgress(true);
       }
       let start = 0;
+      if (isVideo) {
+        setTimeout(() => {
+          setFromIndex(screen);
+        }, 20);
+      }
+      const interval = isVideo ? 12 : 8;
+      const limit = isVideo ? 1000000 : 1;
       intervalRef.current = setInterval(() => {
-        if (start < 1) {
+        if (start < limit) {
           start += 0.01;
           setProgress(start);
         } else {
-          onTransitionEnded(direction);
+          onTransitionEnded(screen);
         }
-      }, 8);
+      }, interval);
     },
-    [onTransitionEnded, progress]
+    [onTransitionEnded, setTransitionInProgress]
   );
 
   const onScroll = useCallback(
-    (direction) => {
-      if (progress > 0) {
-        return;
-      }
+    (screen, direction, isVideo) => {
       setTransition((prevState: any) => {
         prevState.defaultParams.direction = directions[direction];
         return prevState;
       });
-      if (direction === transitionDirection.prev) {
-        setToIndex((prevState) => prevState - 2);
-      }
-      startTransition(direction);
+
+      setToIndex(screen);
+      startTransition(screen, isVideo);
     },
-    [progress, startTransition]
+    [startTransition]
   );
 
   useEffect(() => {
     if (activeScreen === currentScreen.current) {
       return;
     }
+    const isVideo = activeScreen === 0;
+    if (progress > 0) {
+      console.log("testttt");
+      onTransitionEnded(activeScreen);
+    }
+
     if (activeScreen > currentScreen.current) {
-      onScroll(transitionDirection.next);
+      onScroll(activeScreen, transitionDirection.next, isVideo);
     } else {
-      onScroll(transitionDirection.prev);
+      onScroll(activeScreen, transitionDirection.prev, isVideo);
     }
     currentScreen.current = activeScreen;
-  }, [onScroll, activeScreen]);
+  }, [onScroll, activeScreen, progress, onTransitionEnded]);
 
   const stopTransition = () => {
     clearInterval(intervalRef.current);
     setProgress(0);
   };
+
+  console.log(activeScreen);
 
   return {
     fromIndex,

@@ -32,7 +32,7 @@ const slides = [
 const createSlides = () => {
   let arr: SpeciesSlide[] = [];
 
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 30; i++) {
     arr = [...arr, ...slides];
   }
   return arr;

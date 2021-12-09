@@ -6,10 +6,8 @@ interface IState {
   setActiveScreen: (val: number) => void;
   selectScreen: (val: number) => void;
   appLoaded: boolean;
-  fromTransitionIndex: number;
-  setFromTransitionIndex: (val: number) => void;
-  ToTransitionIndex: number;
-  setToTransitionIndex: (val: number) => void;
+  transitionInProgress: boolean;
+  setTransitionInProgress: (val: boolean) => void;
 }
 
 const StoreContext = createContext<IState>({} as IState);
@@ -21,21 +19,22 @@ interface IProps {
 const Store = ({ children }: IProps) => {
   const [activeScreen, setActiveScreen] = useState(0);
   const [appLoaded, setAppLoaded] = useState(false);
-  const [fromTransitionIndex, setFromTransitionIndex] = useState(0);
-  const [ToTransitionIndex, setToTransitionIndex] = useState(0);
+  const [transitionInProgress, setTransitionInProgress] = useState(false);
+
   const selectScreen = (index: number) => {
-    setActiveScreen(index);
+    if (!transitionInProgress) {
+      setActiveScreen(index);
+    }
   };
+  console.log(transitionInProgress);
 
   const value = {
     activeScreen,
     setActiveScreen,
     selectScreen,
     appLoaded,
-    fromTransitionIndex,
-    setFromTransitionIndex,
-    ToTransitionIndex,
-    setToTransitionIndex,
+    transitionInProgress,
+    setTransitionInProgress,
   };
 
   useEffect(() => {

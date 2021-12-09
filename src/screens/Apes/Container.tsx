@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import animations from "../../animations";
 import Frame from "../../components/Frame";
 import UnityElement from "../../components/UnityElement";
 import { UNITY_INTERVAL } from "../../consts";
@@ -12,7 +12,12 @@ interface Props {
 }
 function Container({ smallApe, coins, id = "", loadUnity, canvasId }: Props) {
   return (
-    <div className={`ape-container`} id={id}>
+    <div
+      className={`${
+        loadUnity ? animations.fadeInUp : animations.fadeOut
+      } ape-container`}
+      id={id}
+    >
       <figure
         className={`ape-figure ape-figure-bottom-small selected  delay-1`}
       />

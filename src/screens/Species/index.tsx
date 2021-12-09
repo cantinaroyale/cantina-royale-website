@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import { Curves } from "../../components";
 import Slider from "../../components/Slider";
 import { ScreenComponentProps, SpeciesSlide } from "../../types";
 import { speciesSlides } from "./data";
@@ -15,7 +16,7 @@ function Species({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
-      {/* <Circles generateLink = {generateLink} /> */}
+      <Curves show={isActive} />
 
       <h2 className="title">
         <ReactMarkdown children={t("title")} />
@@ -23,7 +24,11 @@ function Species({ isActive }: ScreenComponentProps) {
       <h4 className="subtitle">
         <ReactMarkdown children={t("subtitle")} />
       </h4>
-      {/* <Slider<SpeciesSlide> slides={speciesSlides} component={Slide} /> */}
+      {/* <Slider<SpeciesSlide>
+        slides={speciesSlides}
+        component={Slide}
+        show={isActive}
+      /> */}
       <h5 className="species-bottom-text">
         <ReactMarkdown children={t("bottomText")} />
       </h5>
