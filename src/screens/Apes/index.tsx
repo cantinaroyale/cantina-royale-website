@@ -7,7 +7,7 @@ import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import Container from "./Container";
 
-function Apes({ isActive }: ScreenComponentProps) {
+function Apes({ isActive, bg }: ScreenComponentProps) {
   const { t } = useTranslation("apes");
 
   return (
@@ -16,6 +16,13 @@ function Apes({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Title
         text={<ReactMarkdown children={t("title")} />}
         isActive={isActive}

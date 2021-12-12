@@ -4,7 +4,7 @@ import Title from "../../components/Title";
 import { partners, socials } from "../../data";
 import { ScreenComponentProps } from "../../types";
 
-function Partners({ isActive }: ScreenComponentProps) {
+function Partners({ isActive, bg }: ScreenComponentProps) {
   const { t } = useTranslation("partners");
   return (
     <div
@@ -12,6 +12,13 @@ function Partners({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Title text={t("title")} isActive={isActive} />
 
       <div className="partners-flex">

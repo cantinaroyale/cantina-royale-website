@@ -12,7 +12,7 @@ import { ScreenComponentProps } from "../../types";
 import { delay } from "../../utils";
 import videos from "../../videos";
 
-function Variations({ isActive }: ScreenComponentProps) {
+function Variations({ isActive, bg }: ScreenComponentProps) {
   const videoRef: any = useRef(null);
   const { t } = useTranslation("variations");
 
@@ -32,6 +32,13 @@ function Variations({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Title
         text={<ReactMarkdown children={t("title")} />}
         isActive={isActive}

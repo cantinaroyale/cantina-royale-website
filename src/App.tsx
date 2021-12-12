@@ -15,7 +15,7 @@ function App() {
         <>
           <Navbar />
           <AppLoader />
-          <Transitions />
+          {/* <Transitions /> */}
           <Screens />
           <Indicator />
         </>

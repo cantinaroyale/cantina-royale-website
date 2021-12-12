@@ -5,7 +5,7 @@ import { ScreenComponentProps } from "../../types";
 
 import { useTranslation } from "react-i18next";
 
-function Main({ isActive, appLoaded }: ScreenComponentProps) {
+function Main({ isActive, bg }: ScreenComponentProps) {
   const { t } = useTranslation("main");
 
   return (
@@ -14,6 +14,13 @@ function Main({ isActive, appLoaded }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Scroller />
 
       <div className="page-bottom-flex">

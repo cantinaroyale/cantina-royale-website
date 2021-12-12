@@ -10,7 +10,7 @@ import { useStore } from "../../store";
 const GLTransitions = require("gl-transitions");
 
 let images: any = screensImages;
-images[0] = <MainVideo />;
+// images[0] = <MainVideo />;
 const baseTransition = GLTransitions[MAIN_TRANSITION_NUMBER];
 function useController() {
   const { activeScreen, setTransitionInProgress } = useStore();
@@ -87,7 +87,7 @@ function useController() {
       return;
     }
 
-    const isVideo = activeScreen === 0;
+    const isVideo = false;
 
     handleProgress(activeScreen);
     if (activeScreen > currentScreen.current) {

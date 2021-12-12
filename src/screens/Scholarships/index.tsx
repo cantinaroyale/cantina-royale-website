@@ -7,7 +7,7 @@ import Subtitle from "../../components/Subtitle";
 import Title from "../../components/Title";
 import { ScreenComponentProps } from "../../types";
 
-function Scholarships({ isActive }: ScreenComponentProps) {
+function Scholarships({ isActive, bg }: ScreenComponentProps) {
   const { t } = useTranslation("scholarships");
   return (
     <div
@@ -15,6 +15,13 @@ function Scholarships({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Title
         text={<ReactMarkdown children={t("title")} />}
         isActive={isActive}

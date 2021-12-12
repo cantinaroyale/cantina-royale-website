@@ -5,7 +5,7 @@ import { Curves } from "../../components";
 import Title from "../../components/Title";
 import { ScreenComponentProps } from "../../types";
 
-function Cantina({ isActive }: ScreenComponentProps) {
+function Cantina({ isActive, bg }: ScreenComponentProps) {
   const { t } = useTranslation("cantina");
   return (
     <div
@@ -13,6 +13,13 @@ function Cantina({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <Curves show={isActive} />
       <Title id="cantina-title" text={t("title")} isActive={isActive} />
       <div className="page-bottom-flex">

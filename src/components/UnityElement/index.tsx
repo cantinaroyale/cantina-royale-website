@@ -58,13 +58,15 @@ function UnityElement({
   };
 
   const createInstance = useCallback(async (instance: any, time: number) => {
-    const res = await (window as any).createUnityInstance(
-      canvasRef.current,
-      unityConfig
-    );
-    setInstance(res);
-    setIsLoading(false);
-    randomize(res, time);
+    try {
+      const res = await (window as any).createUnityInstance(
+        canvasRef.current,
+        unityConfig
+      );
+      setInstance(res);
+      setIsLoading(false);
+      randomize(res, time);
+    } catch (error) {}
   }, []);
 
   const startInstance = useCallback(

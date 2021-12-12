@@ -3,6 +3,7 @@ import { FC } from "react";
 export interface ScreenComponentProps {
   isActive: boolean;
   appLoaded: boolean;
+  bg: string;
 }
 
 export interface Screen {

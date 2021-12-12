@@ -10,7 +10,7 @@ import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import videos from "../../videos";
 
-function Pve({ isActive }: ScreenComponentProps) {
+function Pve({ isActive, bg }: ScreenComponentProps) {
   const [showPopup, setShowPopup] = useState(false);
   const { t } = useTranslation("pve");
 
@@ -20,6 +20,13 @@ function Pve({ isActive }: ScreenComponentProps) {
         isActive ? animations.fadeIn : animations.fadeOut
       }`}
     >
+      <img
+        src={bg}
+        alt=""
+        className={`screen-img ${
+          isActive ? animations.fadeIn : animations.fadeOut
+        }`}
+      />
       <VideoPopup
         isActive={showPopup}
         src={videos.mainVideo}

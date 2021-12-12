@@ -8,10 +8,9 @@ import "swiper/swiper.min.css";
 interface Props {
   slides: any[];
   component: any;
-  show: boolean;
 }
 
-function Slider({ slides, component: Component, show }: Props) {
+function Slider({ slides, component: Component }: Props) {
   return (
     <Swiper
       slideToClickedSlide
