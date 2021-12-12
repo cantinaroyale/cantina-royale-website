@@ -5,8 +5,11 @@ import { useStore } from "../../store";
 import Figure from "./Figure";
 
 function Indicator() {
-  const { activeScreen, selectScreen } = useStore();
+  const { activeScreen, selectScreen, appLoaded } = useStore();
   const hide = activeScreen === 0;
+  if (!appLoaded) {
+    return null;
+  }
   return (
     <div
       className={`indicator ${

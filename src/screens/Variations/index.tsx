@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import { Screen } from "../../components";
 import Subtitle from "../../components/Subtitle";
 import Title from "../../components/Title";
 import UnityElement from "../../components/UnityElement";
@@ -12,33 +13,21 @@ import { ScreenComponentProps } from "../../types";
 import { delay } from "../../utils";
 import videos from "../../videos";
 
-function Variations({ isActive, bg }: ScreenComponentProps) {
-  const videoRef: any = useRef(null);
+function Variations({ isActive, bg, overlay }: ScreenComponentProps) {
   const { t } = useTranslation("variations");
-
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     const handleVideo = async () => {
       await delay(500);
-      if (isActive && videoRef.current) {
-        videoRef.current.play();
+      if (isActive) {
+        setPlay(true);
       }
     };
     handleVideo();
   }, [isActive]);
 
   return (
-    <div
-      className={`variations screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="variations" isActive={isActive} overlay={overlay} bg={bg}>
       <Title
         text={<ReactMarkdown children={t("title")} />}
         isActive={isActive}
@@ -48,7 +37,11 @@ function Variations({ isActive, bg }: ScreenComponentProps) {
         text={<ReactMarkdown children={t("subtitle")} />}
         isActive={isActive}
       />
-      <div className="variations-flex">
+      <div
+        className={`variations-flex ${
+          isActive ? animations.zoomIn : animations.zoomOut
+        }`}
+      >
         <div className="variations-ape">
           <img
             src={images.variations.globe}
@@ -88,16 +81,12 @@ function Variations({ isActive, bg }: ScreenComponentProps) {
               alt=""
             />
             {isActive && (
-              <Video
-                id="variations-video"
-                src={videos.mainVideo}
-                ref={videoRef}
-              />
+              <Video id="variations-video" src={videos.mainVideo} play={play} />
             )}
           </div>
         </div>
       </div>
-    </div>
+    </Screen>
   );
 }
 

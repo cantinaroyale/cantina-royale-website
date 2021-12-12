@@ -1,16 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { MainVideo } from "../../components";
 import {
   MAIN_TRANSITION_NUMBER,
   transitionDirection,
   directions,
 } from "../../consts";
-import { screensImages } from "../../data/screens";
 import { useStore } from "../../store";
 const GLTransitions = require("gl-transitions");
-
-let images: any = screensImages;
-// images[0] = <MainVideo />;
+const screensImages: any = [];
 const baseTransition = GLTransitions[MAIN_TRANSITION_NUMBER];
 function useController() {
   const { activeScreen, setTransitionInProgress } = useStore();

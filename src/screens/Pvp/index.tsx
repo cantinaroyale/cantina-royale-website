@@ -2,30 +2,18 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-import { VideoPopup } from "../../components";
-
+import { Screen, VideoPopup } from "../../components";
 import Frame from "../../components/Frame";
 import Title from "../../components/Title";
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import videos from "../../videos";
 
-function Pvp({ isActive, bg }: ScreenComponentProps) {
+function Pvp({ isActive, bg, overlay }: ScreenComponentProps) {
   const [showPopup, setShowPopup] = useState(false);
   const { t } = useTranslation("pvp");
   return (
-    <div
-      className={`pvp screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="pvp" isActive={isActive} overlay={overlay} bg={bg}>
       <VideoPopup
         isActive={showPopup}
         src={videos.mainVideo}
@@ -40,9 +28,7 @@ function Pvp({ isActive, bg }: ScreenComponentProps) {
       <div className="page-bottom-flex">
         <div
           className={`gradiant-text ${
-            isActive
-              ? `${animations.fadeInUp} smallDelay`
-              : animations.fadeOutDown
+            isActive ? `${animations.fadeInUp} ` : animations.fadeOutDown
           }`}
         >
           <ReactMarkdown children={t("gradiantTextLine1")} />
@@ -52,9 +38,7 @@ function Pvp({ isActive, bg }: ScreenComponentProps) {
         <Frame
           id="pvp-bottom-frame"
           className={`video-preview ${
-            isActive
-              ? `${animations.fadeInUp} smallDelay`
-              : animations.fadeOutDown
+            isActive ? `${animations.fadeInUp} ` : animations.fadeOutDown
           }`}
           onClick={() => setShowPopup(true)}
         >
@@ -66,7 +50,7 @@ function Pvp({ isActive, bg }: ScreenComponentProps) {
           <img src={images.shared.play} className="play" alt="play" />
         </Frame>
       </div>
-    </div>
+    </Screen>
   );
 }
 

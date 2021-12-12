@@ -4,6 +4,8 @@ export interface ScreenComponentProps {
   isActive: boolean;
   appLoaded: boolean;
   bg: string;
+  overlay: string;
+  index: number;
 }
 
 export interface Screen {
@@ -11,6 +13,7 @@ export interface Screen {
   img: string;
   overlay: string;
   name: string;
+  id: string;
 }
 
 export interface SpeciesSlide {

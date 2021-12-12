@@ -10,22 +10,22 @@ function Curves({ show }: Props) {
     <div className="curves">
       <img
         className={`${
-          show ? animations.fadeInLeft : animations.fadeOutLeft
-        } small-delay curves-curve-1`}
+          show ? `small-delay ${animations.fadeInLeft}` : animations.fadeOutLeft
+        }  curves-curve-1`}
         src={images.shared.curve1}
         alt="circle"
       />
       <img
         className={`${
-          show ? animations.fadeInLeft : animations.fadeOutLeft
-        } small-delay curves-curve-2`}
+          show ? `small-delay ${animations.fadeInLeft}` : animations.fadeOutLeft
+        }  curves-curve-2`}
         src={images.shared.curve2}
         alt="circle"
       />
       <img
         className={`${
-          show ? animations.fadeInLeft : animations.fadeOutLeft
-        } small-delay  curves-curve-3`}
+          show ? `small-delay ${animations.fadeInLeft}` : animations.fadeOutLeft
+        } curves-curve-3`}
         src={images.shared.curve3}
         alt="circle"
       />

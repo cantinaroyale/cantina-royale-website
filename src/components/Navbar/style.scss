@@ -1,11 +1,11 @@
 .navbar {
 
-
+    pointer-events: none;
     height: 110px;
     position: fixed;
     left: 0px;
     top: 0px;
-    z-index: 99999;
+    z-index: 9;
     width: 100%;
 
     transition: 0.2s all;
@@ -47,6 +47,19 @@
 @media only screen and (max-width: $mobile) {
     .navbar {
         height: 70px;
+
+        &-flex {
+            padding: 0px 15px;
+        }
+
+        &-logo {
+            height: 50px;
+            margin-left: 0px;
+        }
+
+        &-coming-soon {
+            width: 180px;
+        }
     }
 
 }

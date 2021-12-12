@@ -1,24 +1,13 @@
 import { useTranslation } from "react-i18next";
-import animations from "../../animations";
+import { Screen } from "../../components";
 import Title from "../../components/Title";
 import { partners, socials } from "../../data";
 import { ScreenComponentProps } from "../../types";
 
-function Partners({ isActive, bg }: ScreenComponentProps) {
+function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
   const { t } = useTranslation("partners");
   return (
-    <div
-      className={`partners screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="partners" isActive={isActive} overlay={overlay} bg={bg}>
       <Title text={t("title")} isActive={isActive} />
 
       <div className="partners-flex">
@@ -55,7 +44,7 @@ function Partners({ isActive, bg }: ScreenComponentProps) {
           })}
         </ul>
       </div>
-    </div>
+    </Screen>
   );
 }
 

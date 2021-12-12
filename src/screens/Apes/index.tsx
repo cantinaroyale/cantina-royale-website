@@ -1,28 +1,18 @@
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
+import { Screen } from "../../components";
 import Subtitle from "../../components/Subtitle";
 import Title from "../../components/Title";
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import Container from "./Container";
 
-function Apes({ isActive, bg }: ScreenComponentProps) {
+function Apes({ isActive, bg, overlay }: ScreenComponentProps) {
   const { t } = useTranslation("apes");
 
   return (
-    <div
-      className={`apes screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="apes" isActive={isActive} overlay={overlay} bg={bg}>
       <Title
         text={<ReactMarkdown children={t("title")} />}
         isActive={isActive}
@@ -52,7 +42,7 @@ function Apes({ isActive, bg }: ScreenComponentProps) {
           }
         />
       </div>
-    </div>
+    </Screen>
   );
 }
 

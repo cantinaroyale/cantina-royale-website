@@ -1,25 +1,15 @@
 import "./i18";
 import "animate.css";
-import { isMobile } from "react-device-detect";
-import { Screens, Transitions } from "./Containers";
+import { Screens } from "./Containers";
 import AppLoader from "./components/AppLoader";
-import { Indicator, Navbar } from "./components";
-import Mobile from "./components/Mobile";
+import { Indicator } from "./components";
 
 function App() {
   return (
     <div className="App">
-      {isMobile ? (
-        <Mobile />
-      ) : (
-        <>
-          <Navbar />
-          <AppLoader />
-          {/* <Transitions /> */}
-          <Screens />
-          <Indicator />
-        </>
-      )}
+      <AppLoader />
+      <Screens />
+      <Indicator />
     </div>
   );
 }

@@ -1,11 +1,11 @@
-.cantina {
+#cantina {
     #cantina-title {
-
+        text-align: left;
         position: absolute;
         top: 40%;
         transform: translate(0, -50%);
         left: 80px;
-
+        max-width: 80%;
         font-size: 60px;
         font-weight: 500;
     }
@@ -16,6 +16,33 @@
             background: -webkit-linear-gradient(0deg, #FFAB2E 0%, #FFFFFF 60%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    #cantina {
+        #cantina-title {
+            text-align: center;
+            font-size: 23px;
+            max-width: none;
+            width: 100%;
+            left: 0px;
+            padding: 0px 30px;
+            line-height: 26px;
+
+        }
+
+        .page-bottom-flex {
+            padding: 0px;
+            padding-bottom: 120px;
+
+        }
+
+        .gradiant-text {
+            text-align: center;
+            width: 100%;
+            padding: 0px 20px;
         }
     }
 }

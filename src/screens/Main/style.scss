@@ -1,4 +1,6 @@
-.main {
+@import './media-query-style.scss';
+
+#main {
 
 
     .page-bottom-flex {
@@ -22,10 +24,11 @@
 
     }
 
-}
-
-#main-video {
-    transition: 0.6s all;
-    opacity: 0;
-    z-index: 0;
+    #main-video {
+        transition: 0.6s all;
+        // opacity: 0;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }

@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-import { Curves } from "../../components";
+import { Curves, Screen } from "../../components";
 import Slider from "../../components/Slider";
 import Subtitle from "../../components/Subtitle";
 import Title from "../../components/Title";
@@ -10,32 +9,11 @@ import { ScreenComponentProps } from "../../types";
 import { speciesSlides } from "./data";
 import Slide from "./Slide";
 
-function Species({ isActive, bg }: ScreenComponentProps) {
+function Species({ isActive, bg, overlay }: ScreenComponentProps) {
   const { t } = useTranslation("species");
-  const [showSlider, setShowSlider] = useState(false);
-  const timeout = useRef<any>(null);
-  useEffect(() => {
-    timeout.current = setTimeout(() => {
-      setShowSlider(true);
-    }, 1000);
-    return () => {
-      clearTimeout(timeout.current);
-    };
-  }, []);
 
   return (
-    <div
-      className={`species screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="species" isActive={isActive} overlay={overlay} bg={bg}>
       <Curves show={isActive} />
 
       <Title
@@ -46,7 +24,9 @@ function Species({ isActive, bg }: ScreenComponentProps) {
         text={<ReactMarkdown children={t("subtitle")} />}
         isActive={isActive}
       />
-      {showSlider && <Slider slides={speciesSlides} component={Slide} />}
+      <div className={isActive ? animations.zoomIn : animations.zoomOut}>
+        <Slider slides={speciesSlides} component={Slide} />
+      </div>
       <h5
         className={`species-bottom-text ${
           isActive ? animations.slideInUp : animations.slideOutDown
@@ -54,7 +34,7 @@ function Species({ isActive, bg }: ScreenComponentProps) {
       >
         <ReactMarkdown children={t("bottomText")} />
       </h5>
-    </div>
+    </Screen>
   );
 }
 

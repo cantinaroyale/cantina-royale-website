@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Popup } from "..";
 import animations from "../../animations";
-import { delay } from "../../utils";
 import Frame from "../Frame";
 import Video from "../Video";
 
@@ -12,11 +11,10 @@ interface Props {
   poster: string;
 }
 function VideoPopup({ isActive, src, close, poster }: Props) {
-  const videoRef: any = useRef(null);
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     const startVideo = async () => {
-      await delay(400);
-      videoRef.current.play();
+      setPlay(true);
     };
     if (isActive) {
       startVideo();
@@ -24,7 +22,7 @@ function VideoPopup({ isActive, src, close, poster }: Props) {
   }, [isActive]);
 
   const onClose = () => {
-    videoRef.current.pause();
+    setPlay(false);
     close();
   };
   return (
@@ -34,10 +32,10 @@ function VideoPopup({ isActive, src, close, poster }: Props) {
       blur
       show={true}
       style={{ display: isActive ? "flex" : "none" }}
-      contentClassName={`${animations.zoomIn} animate__faster`}
+      contentClassName={`${animations.fadeInDown} animate__faster`}
     >
       <Frame>
-        <Video ref={videoRef} poster={poster} src={src} />
+        <Video play={play} poster={poster} src={src} />
       </Frame>
     </Popup>
   );

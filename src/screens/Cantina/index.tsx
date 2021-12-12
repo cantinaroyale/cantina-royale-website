@@ -1,25 +1,14 @@
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-import { Curves } from "../../components";
+import { Curves, Screen } from "../../components";
 import Title from "../../components/Title";
 import { ScreenComponentProps } from "../../types";
 
-function Cantina({ isActive, bg }: ScreenComponentProps) {
+function Cantina({ isActive, bg, overlay }: ScreenComponentProps) {
   const { t } = useTranslation("cantina");
   return (
-    <div
-      className={`cantina screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="cantina" isActive={isActive} bg={bg} overlay={overlay}>
       <Curves show={isActive} />
       <Title id="cantina-title" text={t("title")} isActive={isActive} />
       <div className="page-bottom-flex">
@@ -32,7 +21,7 @@ function Cantina({ isActive, bg }: ScreenComponentProps) {
           <ReactMarkdown children={t("gradiantTextLine2")} />
         </div>
       </div>
-    </div>
+    </Screen>
   );
 }
 

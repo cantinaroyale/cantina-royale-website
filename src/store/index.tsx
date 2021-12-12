@@ -39,7 +39,7 @@ const Store = ({ children }: IProps) => {
   useEffect(() => {
     setTimeout(() => {
       setAppLoaded(true);
-    }, APP_LOADER_TIMEOUT);
+    }, APP_LOADER_TIMEOUT - 400);
   }, []);
 
   return (

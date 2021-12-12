@@ -20,6 +20,7 @@
         transform: scale(1.05);
         animation: zoomOutBg 4s linear 0.3s forwards;
         transform-origin: center;
+        object-fit: cover;
     }
 
     &-img {
@@ -71,5 +72,14 @@
     100% {
         transform: scale(1.1);
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .app-loader {
+        &-img {
+            width: 95%;
+            height: auto;
+        }
     }
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-import { VideoPopup } from "../../components";
+import { Screen, VideoPopup } from "../../components";
 import Frame from "../../components/Frame";
 import Title from "../../components/Title";
 
@@ -10,23 +10,12 @@ import images from "../../images";
 import { ScreenComponentProps } from "../../types";
 import videos from "../../videos";
 
-function Pve({ isActive, bg }: ScreenComponentProps) {
+function Pve({ isActive, bg, overlay }: ScreenComponentProps) {
   const [showPopup, setShowPopup] = useState(false);
   const { t } = useTranslation("pve");
 
   return (
-    <div
-      className={`pve screen-content ${
-        isActive ? animations.fadeIn : animations.fadeOut
-      }`}
-    >
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+    <Screen id="pve" isActive={isActive} overlay={overlay} bg={bg}>
       <VideoPopup
         isActive={showPopup}
         src={videos.mainVideo}
@@ -41,9 +30,7 @@ function Pve({ isActive, bg }: ScreenComponentProps) {
       <div className="page-bottom-flex">
         <div
           className={`gradiant-text ${
-            isActive
-              ? `${animations.fadeInLeft} smallDelay`
-              : animations.fadeOut
+            isActive ? `${animations.fadeInLeft} ` : animations.fadeOut
           }`}
         >
           <ReactMarkdown children={t("gradiantTextLine1")} />
@@ -53,9 +40,7 @@ function Pve({ isActive, bg }: ScreenComponentProps) {
         <Frame
           id="pve-bottom-frame "
           className={`video-preview ${
-            isActive
-              ? `${animations.fadeInRight} smallDelay`
-              : animations.fadeOut
+            isActive ? `${animations.fadeInRight} ` : animations.fadeOut
           }`}
           onClick={() => setShowPopup(true)}
         >
@@ -67,7 +52,7 @@ function Pve({ isActive, bg }: ScreenComponentProps) {
           <img src={images.shared.play} className="play" alt="play" />
         </Frame>
       </div>
-    </div>
+    </Screen>
   );
 }
 

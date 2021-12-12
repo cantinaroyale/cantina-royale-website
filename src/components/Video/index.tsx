@@ -1,15 +1,27 @@
-import React, { forwardRef } from "react";
+import { useEffect, useRef } from "react";
 
 interface Props {
   id?: string;
   className?: string;
   poster?: string;
   src?: string;
-  ref?: any;
+  play: boolean;
 }
 
-const Video = forwardRef((props: Props, ref: any) => {
-  const { id = "", className = "", poster = "", src } = props;
+const Video = ({ id = "", className = "", poster = "", src, play }: Props) => {
+  const ref = useRef<any>(null);
+
+  useEffect(() => {
+    if (!ref.current) {
+      return;
+    }
+    if (play) {
+      ref.current.play();
+    } else if (ref.current.currentTime > 0) {
+      ref.current.pause();
+    }
+  }, [play]);
+
   return (
     <video
       ref={ref}
@@ -25,6 +37,6 @@ const Video = forwardRef((props: Props, ref: any) => {
       Your browser does not support HTML5 video.
     </video>
   );
-});
+};
 
 export default Video;

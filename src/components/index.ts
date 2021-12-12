@@ -5,6 +5,7 @@ import Mobile from "./Mobile";
 import Navbar from "./Navbar";
 import Overlays from "./Overlays";
 import Popup from "./Popup";
+import Screen from "./Screen";
 import Scroller from "./Scroller";
 import VideoPopup from "./VideoPopup";
 
@@ -18,4 +19,5 @@ export {
   Curves,
   Navbar,
   Mobile,
+  Screen,
 };

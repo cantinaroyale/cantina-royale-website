@@ -1,61 +1,7 @@
-.variations {
+#variations {
     .subtitle {
         max-width: 600px;
         margin-top: 13px;
-    }
-
-    &-ape {
-        position: relative;
-        z-index: 99;
-        width: fit-content;
-
-        &-arrow {
-            position: absolute;
-            left: 100%;
-            top: 49%;
-        }
-    }
-
-    &-video {
-        position: absolute;
-
-        left: 0px;
-        top: -60px;
-
-        &-overlay {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 105%;
-            height: 105%;
-            object-fit: cover;
-            z-index: 9;
-            transform: translate(-50%, -50%);
-
-        }
-
-        &-container {
-            width: 1150px;
-            height: 730px;
-            overflow: hidden;
-
-            &-circle {
-                position: absolute;
-                left: 50%;
-                width: 550px;
-                height: 550px;
-                object-fit: contain;
-                transform: translate(-50%);
-                z-index: 99;
-            }
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            transform: scale(1.6);
-            margin-top: -60px;
-        }
     }
 
     #variations-ape-loader {
@@ -63,24 +9,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         top: 50%;
-    }
-
-    &-globe {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        object-fit: contain;
-        top: -50px;
-        left: -200px;
-    }
-
-    &-flex {
-        margin-top: 40px;
-        position: relative;
-        height: fit-content;
-        width: 1000px;
-        justify-content: flex-start;
-        z-index: 10;
     }
 
     .frame {
@@ -94,33 +22,135 @@
         &-inner {
             padding: 10px;
 
-            &-content {}
+
         }
     }
 
+    .variations {
+
+        &-ape {
+            position: relative;
+            z-index: 99;
+            width: fit-content;
+
+            &-arrow {
+                position: absolute;
+                left: 100%;
+                top: 49%;
+            }
+        }
+
+        &-video {
+            position: absolute;
+
+            left: 0px;
+            top: -60px;
+
+            &-overlay {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 105%;
+                height: 105%;
+                object-fit: cover;
+                z-index: 9;
+                transform: translate(-50%, -50%);
+
+            }
+
+            &-container {
+                width: 1150px;
+                height: 730px;
+                overflow: hidden;
+
+                &-circle {
+                    position: absolute;
+                    left: 50%;
+                    width: 550px;
+                    height: 550px;
+                    object-fit: contain;
+                    transform: translate(-50%);
+                    z-index: 99;
+                }
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+                transform: scale(1.6);
+                margin-top: -60px;
+            }
+        }
+
+
+
+        &-globe {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+            top: -50px;
+            left: -200px;
+        }
+
+        &-flex {
+            margin-top: 40px;
+            position: relative;
+            height: fit-content;
+            width: 1000px;
+            justify-content: flex-start;
+            z-index: 10;
+        }
+
+
+
+    }
 }
 
 
 @media only screen and (max-width: 1600px) {
-    .variations-flex {
-        zoom: 0.8;
+    #variations {
+        .variations-flex {
+            zoom: 0.8;
+        }
     }
 }
 
 
 @media only screen and (max-width: $mobile) {
-    .variations {
-        &-globe {
-            display: none;
-        }
+    #variations {
+        .variations {
+            &-globe {
+                display: none;
+            }
 
-        &-flex {
-            margin-top: 130px;
-            zoom: 0.3;
-            position: relative;
-            width: auto;
-            margin-right: auto;
-            margin-left: 70px;
+            &-video {
+                top: 420px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+
+            &-ape {
+
+
+                &-arrow {
+                    top: calc(100% + 40px);
+                    left: 50%;
+                    transform: translate(-50%) rotate(90deg);
+                }
+            }
+
+            &-flex {
+                width: 100%;
+                margin-top: 60px;
+                zoom: 0.4;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-right: auto;
+                margin-left: 70px;
+                margin-left: auto;
+            }
         }
     }
 }

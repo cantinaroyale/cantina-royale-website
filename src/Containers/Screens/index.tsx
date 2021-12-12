@@ -1,8 +1,7 @@
-import animations from "../../animations";
 import { screens } from "../../data";
 import { useStore } from "../../store";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import { screensImages } from "../../data/screens";
+import { Screen } from "../../types";
 function Screens() {
   const { selectScreen, activeScreen, appLoaded, transitionInProgress } =
     useStore();
@@ -25,24 +24,18 @@ function Screens() {
       wheelConfig={[7, 30, 0.05] as any}
     >
       <div className="screens" style={{ opacity: appLoaded ? 1 : 0 }}>
-        {screens.map((screen, index) => {
+        {screens.map((screen: Screen, index) => {
           const { component: Component, overlay, img: bg } = screen;
           const isActive = activeScreen === index;
           return (
-            <div
-              className="screen"
-              style={{ zIndex: isActive ? 99 : 0 }}
+            <Component
               key={index}
-            >
-              <img
-                src={overlay}
-                alt="overlay"
-                className={`screen-overlay ${
-                  isActive ? animations.fadeIn : animations.fadeOut
-                }`}
-              />
-              <Component isActive={isActive} appLoaded={appLoaded} bg={bg} />
-            </div>
+              isActive={isActive}
+              appLoaded={appLoaded}
+              bg={bg}
+              overlay={overlay}
+              index={index}
+            />
           );
         })}
       </div>

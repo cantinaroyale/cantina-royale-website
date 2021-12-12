@@ -1,16 +1,17 @@
 import React from "react";
 import animations from "../../animations";
 import images from "../../images";
-import { useStore } from "../../store";
+interface Props {
+  showSoon?: boolean;
+}
 
-function Navbar() {
-  const { activeScreen } = useStore();
+function Navbar({ showSoon }: Props) {
   return (
     <nav className="navbar">
       <div className="navbar-flex">
         <img src={images.navbar.logo} alt="logo" className="navbar-logo" />
 
-        {activeScreen === 0 && (
+        {showSoon && (
           <img
             src={images.navbar.date}
             alt="date"
