@@ -306,6 +306,16 @@
         }
     }
 
+    @media only screen and (max-width: 1500px) {
+        #apes {}
+
+        .apes-flex {
+
+            zoom: 0.75;
+
+        }
+    }
+
 
     @media only screen and (max-width: $mobile) {
         #apes {}

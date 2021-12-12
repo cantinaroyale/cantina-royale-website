@@ -3,23 +3,16 @@ import images from "../images";
 const socials = [
   {
     image: images.socials.discord,
-    url: "/",
+    url: "https://discord.gg/txzZHB85tY",
   },
-  {
-    image: images.socials.telegram,
-    url: "/",
-  },
-  {
-    image: images.socials.social,
-    url: "/",
-  },
+
   {
     image: images.socials.youtube,
-    url: "/",
+    url: "https://www.youtube.com/channel/UCvfAXGPvwFGPoPpkFHneqHA",
   },
   {
     image: images.socials.twitter,
-    url: "/",
+    url: "https://twitter.com/CantinaRoyale",
   },
 ];
 
