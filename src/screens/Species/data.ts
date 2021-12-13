@@ -1,5 +1,4 @@
 import images from "../../images";
-import { SpeciesSlide } from "../../types";
 
 const slides = [
   {
@@ -30,9 +29,9 @@ const slides = [
 ];
 
 const createSlides = () => {
-  let arr: SpeciesSlide[] = [];
+  let arr: any = [];
 
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 4; i++) {
     arr = [...arr, ...slides];
   }
   return arr;
