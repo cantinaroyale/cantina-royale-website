@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cantina-royale-website/static/css/main.a21b3c0f.chunk.css",
-    "main.js": "/cantina-royale-website/static/js/main.f49a54ce.chunk.js",
-    "main.js.map": "/cantina-royale-website/static/js/main.f49a54ce.chunk.js.map",
+    "main.css": "/cantina-royale-website/static/css/main.698dd129.chunk.css",
+    "main.js": "/cantina-royale-website/static/js/main.b2af790f.chunk.js",
+    "main.js.map": "/cantina-royale-website/static/js/main.b2af790f.chunk.js.map",
     "runtime-main.js": "/cantina-royale-website/static/js/runtime-main.3ecef725.js",
     "runtime-main.js.map": "/cantina-royale-website/static/js/runtime-main.3ecef725.js.map",
     "static/css/2.28ecda3d.chunk.css": "/cantina-royale-website/static/css/2.28ecda3d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.45f1036e.chunk.js.map": "/cantina-royale-website/static/js/3.45f1036e.chunk.js.map",
     "index.html": "/cantina-royale-website/index.html",
     "static/css/2.28ecda3d.chunk.css.map": "/cantina-royale-website/static/css/2.28ecda3d.chunk.css.map",
-    "static/css/main.a21b3c0f.chunk.css.map": "/cantina-royale-website/static/css/main.a21b3c0f.chunk.css.map",
+    "static/css/main.698dd129.chunk.css.map": "/cantina-royale-website/static/css/main.698dd129.chunk.css.map",
     "static/js/2.d7a56159.chunk.js.LICENSE.txt": "/cantina-royale-website/static/js/2.d7a56159.chunk.js.LICENSE.txt",
     "static/media/animoca.2bcbaa92.svg": "/cantina-royale-website/static/media/animoca.2bcbaa92.svg",
     "static/media/ape-1.0a7200dc.png": "/cantina-royale-website/static/media/ape-1.0a7200dc.png",
@@ -21,13 +21,13 @@
     "static/media/app-loader-overlay.99a5b13a.png": "/cantina-royale-website/static/media/app-loader-overlay.99a5b13a.png",
     "static/media/app-loader.688d2b80.png": "/cantina-royale-website/static/media/app-loader.688d2b80.png",
     "static/media/arrow.dd484502.svg": "/cantina-royale-website/static/media/arrow.dd484502.svg",
-    "static/media/bg.06380206.png": "/cantina-royale-website/static/media/bg.06380206.png",
+    "static/media/bg.17317cdc.png": "/cantina-royale-website/static/media/bg.17317cdc.png",
+    "static/media/bg.30039fe6.png": "/cantina-royale-website/static/media/bg.30039fe6.png",
+    "static/media/bg.4dd3ad92.png": "/cantina-royale-website/static/media/bg.4dd3ad92.png",
     "static/media/bg.4e3c9ac0.png": "/cantina-royale-website/static/media/bg.4e3c9ac0.png",
-    "static/media/bg.73e570c4.png": "/cantina-royale-website/static/media/bg.73e570c4.png",
-    "static/media/bg.8bd5d698.png": "/cantina-royale-website/static/media/bg.8bd5d698.png",
     "static/media/bg.8beca0e5.jpg": "/cantina-royale-website/static/media/bg.8beca0e5.jpg",
-    "static/media/bg.9c314a94.png": "/cantina-royale-website/static/media/bg.9c314a94.png",
-    "static/media/bg.f2edb0aa.png": "/cantina-royale-website/static/media/bg.f2edb0aa.png",
+    "static/media/bg.d0eb5358.png": "/cantina-royale-website/static/media/bg.d0eb5358.png",
+    "static/media/bg.eb1a90bd.png": "/cantina-royale-website/static/media/bg.eb1a90bd.png",
     "static/media/bg.f7690e60.png": "/cantina-royale-website/static/media/bg.f7690e60.png",
     "static/media/binance.bc6a2e42.svg": "/cantina-royale-website/static/media/binance.bc6a2e42.svg",
     "static/media/chromia.8f1cbaae.svg": "/cantina-royale-website/static/media/chromia.8f1cbaae.svg",
@@ -61,6 +61,7 @@
     "static/media/play.b0164fe6.svg": "/cantina-royale-website/static/media/play.b0164fe6.svg",
     "static/media/polygon.20a47424.svg": "/cantina-royale-website/static/media/polygon.20a47424.svg",
     "static/media/post.89ac8f1b.svg": "/cantina-royale-website/static/media/post.89ac8f1b.svg",
+    "static/media/shield.840eafcc.png": "/cantina-royale-website/static/media/shield.840eafcc.png",
     "static/media/social.cac17ad4.svg": "/cantina-royale-website/static/media/social.cac17ad4.svg",
     "static/media/solana.1c0ec227.svg": "/cantina-royale-website/static/media/solana.1c0ec227.svg",
     "static/media/telegram.d394f043.svg": "/cantina-royale-website/static/media/telegram.d394f043.svg",
@@ -74,7 +75,7 @@
     "static/js/runtime-main.3ecef725.js",
     "static/css/2.28ecda3d.chunk.css",
     "static/js/2.d7a56159.chunk.js",
-    "static/css/main.a21b3c0f.chunk.css",
-    "static/js/main.f49a54ce.chunk.js"
+    "static/css/main.698dd129.chunk.css",
+    "static/js/main.b2af790f.chunk.js"
   ]
 }
