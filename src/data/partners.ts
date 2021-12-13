@@ -1,13 +1,14 @@
 import images from "../images";
 
-const partners: string[][] = [
-  [
-    images.partners.ventures,
-    images.partners.animoca,
-    images.partners.chromia,
-    images.partners.binance,
-  ],
-  [images.partners.hashed, images.partners.polygon, images.partners.solana],
+const partners: string[] = [
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
+  images.partners.shield,
 ];
 
 export default partners;

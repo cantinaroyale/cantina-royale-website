@@ -7,6 +7,7 @@ import solana from "../assets/images/home/partners/companies/solana.svg";
 import ventures from "../assets/images/home/partners/companies/ventures.svg";
 import polygon from "../assets/images/home/partners/companies/polygon.svg";
 import animoca from "../assets/images/home/partners/companies/animoca.svg";
+import shield from "../assets/images/home/partners/shield.png";
 
 export {
   bg,
@@ -18,4 +19,5 @@ export {
   ventures,
   polygon,
   animoca,
+  shield,
 };

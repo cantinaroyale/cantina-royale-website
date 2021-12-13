@@ -4,28 +4,34 @@
     .partners {
 
 
-        &-flex {
-            margin-top: 110px;
-        }
+
 
         &-list {
+            margin-top: 110px;
             margin-bottom: 30px;
-            width: 1000px;
+            width: 950px;
             display: flex;
-
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
 
             &-item {
                 padding: 0px 0px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                width: calc(100% / 4 - 20px);
+                position: relative;
+                margin-bottom: 50px;
 
                 img {
                     object-fit: contain;
-                    width: auto;
                     height: 100%;
-                    max-width: 85%;
+                    width: 100%;
+                    position: relative;
+                    left: 50%;
+                    top: 50%;
+                    transform-origin: center;
+                    transform: translate(-50%, -50%) scale(1.9);
 
                 }
             }
@@ -84,22 +90,37 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    #partners {
+        .partners {
 
+
+            &-list {
+                max-width: 700px;
+                margin-top: 120px;
+                flex-wrap: wrap;
+                width: 100%;
+
+
+
+            }
+
+
+        }
+    }
+}
 
 
 @media only screen and (max-width: $mobile) {
     #partners {
         .partners {
-            &-flex {
-                margin-top: 50px;
-                padding: 0px 35px;
-            }
+
 
             &-list {
-                zoom: 0.5;
-
+                zoom: 0.3;
+                margin-top: 170px;
                 flex-wrap: wrap;
-                width: 100%;
+                width: 85%;
 
                 &-item {
                     width: 48% !important;
@@ -109,6 +130,7 @@
             &-community {
                 &-list {
                     zoom: 0.5;
+
                 }
             }
         }

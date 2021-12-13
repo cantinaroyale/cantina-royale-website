@@ -10,6 +10,7 @@
     }
 
     .frame {
+        pointer-events: none;
         padding: 9px;
 
         &-inner {

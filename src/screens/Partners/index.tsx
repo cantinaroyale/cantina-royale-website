@@ -10,25 +10,15 @@ function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
     <Screen id="partners" isActive={isActive} overlay={overlay} bg={bg}>
       <Title text={t("title")} isActive={isActive} />
 
-      <div className="partners-flex">
-        {partners.map((list, index) => {
+      <ul className="partners-list">
+        {partners.map((img, index) => {
           return (
-            <ul className="partners-list" key={index}>
-              {list.map((partner, i) => {
-                return (
-                  <li
-                    style={{ width: `calc(100% / ${list.length} )` }}
-                    className="partners-list-item"
-                    key={i}
-                  >
-                    <img src={partner} alt="partner" />
-                  </li>
-                );
-              })}
-            </ul>
+            <li className="partners-list-item" key={index}>
+              <img src={img} alt="" />
+            </li>
           );
         })}
-      </div>
+      </ul>
 
       <div className="partners-community">
         <h3 className="partners-community-title">{t("community")}</h3>
