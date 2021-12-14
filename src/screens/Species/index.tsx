@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import animations from "../../animations";
-import { Curves, Screen } from "../../components";
+import { Screen } from "../../components";
 import Slider from "../../components/Slider";
 import Subtitle from "../../components/Subtitle";
 import Title from "../../components/Title";
@@ -14,7 +14,7 @@ function Species({ isActive, bg, overlay }: ScreenComponentProps) {
 
   return (
     <Screen id="species" isActive={isActive} overlay={overlay} bg={bg}>
-      <Curves show={isActive} />
+      {/* <Curves show={isActive} /> */}
 
       <Title
         text={<ReactMarkdown children={t("title")} />}

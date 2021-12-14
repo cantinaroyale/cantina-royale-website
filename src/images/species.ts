@@ -1,4 +1,4 @@
-import bg from "../assets/images/home/species/bg.png";
+import bg from "../assets/images/home/species/bg.jpg";
 import overlay from "../assets/images/home/species/overlay.png";
 
 import figure1 from "../assets/images/home/species/figures/figure1.png";

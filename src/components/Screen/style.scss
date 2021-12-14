@@ -7,7 +7,7 @@
 
     &-content {
         position: relative;
-        width: 100%;
+
         height: 100%;
         padding-top: 110px;
         display: flex;
@@ -18,16 +18,68 @@
 
     &-img {
         position: absolute;
-        left: 0px;
+        left: 50%;
         top: 0px;
         width: 100%;
         height: 100%;
         pointer-events: none;
         z-index: 0;
+        transform: translate(-50%);
         object-fit: cover;
         object-position: center;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 25s;
+        animation: linear infinite;
+        animation-name: run;
+        animation-duration: 25s;
     }
 
+
+
+    @-webkit-keyframes run {
+        0% {
+            left: 50%;
+        }
+
+        25% {
+            left: calc(50% + 150px);
+        }
+
+        50% {
+            left: 50%;
+        }
+
+        75% {
+            left: calc(50% - 150px);
+        }
+
+        100% {
+            left: 50%;
+        }
+    }
+
+    @keyframes run {
+        0% {
+            left: 50%;
+        }
+
+        25% {
+            left: calc(50% + 150px);
+        }
+
+        50% {
+            left: 50%;
+        }
+
+        75% {
+            left: calc(50% - 150px);
+        }
+
+        100% {
+            left: 50%;
+        }
+    }
 
     &-overlay {
         width: 100%;

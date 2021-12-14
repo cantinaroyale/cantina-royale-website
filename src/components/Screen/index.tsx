@@ -1,7 +1,7 @@
-import React from "react";
 import { ReactNode } from "react-markdown/lib/react-markdown";
 import { Navbar } from "..";
 import animations from "../../animations";
+import ScreenBg from "./ScreenBg";
 
 interface Props {
   isActive: boolean;
@@ -38,13 +38,7 @@ function Screen({
           isActive ? animations.fadeIn : animations.fadeOut
         }`}
       />
-      <img
-        src={bg}
-        alt=""
-        className={`screen-img ${
-          isActive ? animations.fadeIn : animations.fadeOut
-        }`}
-      />
+      <ScreenBg bg={bg} isActive={isActive} />
       <div className="screen-content">{children}</div>
     </div>
   );
