@@ -13,6 +13,7 @@ interface Props {
   bg: string;
   content?: ReactNode;
   index?: number;
+  isMainPage?: boolean;
 }
 
 function Screen({
@@ -24,6 +25,7 @@ function Screen({
   overlay,
   bg,
   content,
+  isMainPage,
   index,
 }: Props) {
   const className = `screen ${isActive ? inAnimation : outAnimation}`;
@@ -38,7 +40,7 @@ function Screen({
           isActive ? animations.fadeIn : animations.fadeOut
         }`}
       />
-      <ScreenBg bg={bg} isActive={isActive} />
+      <ScreenBg bg={bg} isActive={isActive} stopAnimation={isMainPage} />
       <div className="screen-content">{children}</div>
     </div>
   );

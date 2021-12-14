@@ -38,6 +38,7 @@ function Main({
       overlay={overlay}
       bg={bg}
       index={index}
+      isMainPage
       content={
         <Video
           play={play}
