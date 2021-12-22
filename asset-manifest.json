@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cantina-royale-website/static/css/main.f5ff28dc.chunk.css",
-    "main.js": "/cantina-royale-website/static/js/main.83f03ed8.chunk.js",
-    "main.js.map": "/cantina-royale-website/static/js/main.83f03ed8.chunk.js.map",
+    "main.css": "/cantina-royale-website/static/css/main.4c1a870b.chunk.css",
+    "main.js": "/cantina-royale-website/static/js/main.446a902d.chunk.js",
+    "main.js.map": "/cantina-royale-website/static/js/main.446a902d.chunk.js.map",
     "runtime-main.js": "/cantina-royale-website/static/js/runtime-main.3ecef725.js",
     "runtime-main.js.map": "/cantina-royale-website/static/js/runtime-main.3ecef725.js.map",
     "static/css/2.28ecda3d.chunk.css": "/cantina-royale-website/static/css/2.28ecda3d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.45f1036e.chunk.js.map": "/cantina-royale-website/static/js/3.45f1036e.chunk.js.map",
     "index.html": "/cantina-royale-website/index.html",
     "static/css/2.28ecda3d.chunk.css.map": "/cantina-royale-website/static/css/2.28ecda3d.chunk.css.map",
-    "static/css/main.f5ff28dc.chunk.css.map": "/cantina-royale-website/static/css/main.f5ff28dc.chunk.css.map",
+    "static/css/main.4c1a870b.chunk.css.map": "/cantina-royale-website/static/css/main.4c1a870b.chunk.css.map",
     "static/js/2.c11216f8.chunk.js.LICENSE.txt": "/cantina-royale-website/static/js/2.c11216f8.chunk.js.LICENSE.txt",
     "static/media/animoca.2bcbaa92.svg": "/cantina-royale-website/static/media/animoca.2bcbaa92.svg",
     "static/media/ape-1.0a7200dc.png": "/cantina-royale-website/static/media/ape-1.0a7200dc.png",
@@ -21,13 +21,13 @@
     "static/media/app-loader-overlay.99a5b13a.png": "/cantina-royale-website/static/media/app-loader-overlay.99a5b13a.png",
     "static/media/app-loader.688d2b80.png": "/cantina-royale-website/static/media/app-loader.688d2b80.png",
     "static/media/arrow.dd484502.svg": "/cantina-royale-website/static/media/arrow.dd484502.svg",
-    "static/media/bg.23ce7fea.jpg": "/cantina-royale-website/static/media/bg.23ce7fea.jpg",
+    "static/media/bg.2a0c6cae.jpg": "/cantina-royale-website/static/media/bg.2a0c6cae.jpg",
+    "static/media/bg.4c253bf6.jpg": "/cantina-royale-website/static/media/bg.4c253bf6.jpg",
     "static/media/bg.4e3c9ac0.png": "/cantina-royale-website/static/media/bg.4e3c9ac0.png",
-    "static/media/bg.5da88d68.jpg": "/cantina-royale-website/static/media/bg.5da88d68.jpg",
+    "static/media/bg.5bcda3e6.jpg": "/cantina-royale-website/static/media/bg.5bcda3e6.jpg",
     "static/media/bg.8beca0e5.jpg": "/cantina-royale-website/static/media/bg.8beca0e5.jpg",
-    "static/media/bg.8f805dc1.jpg": "/cantina-royale-website/static/media/bg.8f805dc1.jpg",
-    "static/media/bg.9241d126.jpg": "/cantina-royale-website/static/media/bg.9241d126.jpg",
-    "static/media/bg.b4f3dc1c.jpg": "/cantina-royale-website/static/media/bg.b4f3dc1c.jpg",
+    "static/media/bg.bc01c9f9.jpg": "/cantina-royale-website/static/media/bg.bc01c9f9.jpg",
+    "static/media/bg.f6d27902.jpg": "/cantina-royale-website/static/media/bg.f6d27902.jpg",
     "static/media/bg.f7690e60.png": "/cantina-royale-website/static/media/bg.f7690e60.png",
     "static/media/binance.bc6a2e42.svg": "/cantina-royale-website/static/media/binance.bc6a2e42.svg",
     "static/media/chromia.8f1cbaae.svg": "/cantina-royale-website/static/media/chromia.8f1cbaae.svg",
@@ -75,7 +75,7 @@
     "static/js/runtime-main.3ecef725.js",
     "static/css/2.28ecda3d.chunk.css",
     "static/js/2.c11216f8.chunk.js",
-    "static/css/main.f5ff28dc.chunk.css",
-    "static/js/main.83f03ed8.chunk.js"
+    "static/css/main.4c1a870b.chunk.css",
+    "static/js/main.446a902d.chunk.js"
   ]
 }
