@@ -13,7 +13,11 @@ function ScreenBg({ bg, isActive, stopAnimation }: Props) {
   return (
     <img
       src={bg}
-      style={{ width: width + 500, animationDuration: "25s" }}
+      style={{
+        width: width + 500,
+        animationDuration: "20s",
+        display: isActive ? "block" : "none",
+      }}
       alt=""
       id={!stopAnimation ? "screen-img-animation" : ""}
       className={`screen-img ${

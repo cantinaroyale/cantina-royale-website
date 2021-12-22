@@ -32,10 +32,10 @@
     #screen-img-animation {
         object-fit: cover;
         object-position: center;
-        -webkit-animation: linear infinite;
+        -webkit-animation: ease-out forwards;
         -webkit-animation-name: run;
 
-        animation: linear infinite;
+        animation: ease-out forwards;
         animation-name: run;
     }
 
@@ -45,13 +45,11 @@
             transform: translate(0px);
         }
 
-        50% {
+        100% {
             transform: translate(-500px);
         }
 
-        100% {
-            transform: translate(0px);
-        }
+
 
 
     }
@@ -61,12 +59,8 @@
             transform: translate(0px);
         }
 
-        50% {
-            transform: translate(-500px);
-        }
-
         100% {
-            transform: translate(0px);
+            transform: translate(-500px);
         }
     }
 

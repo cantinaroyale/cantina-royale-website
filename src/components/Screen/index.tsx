@@ -40,7 +40,9 @@ function Screen({
           isActive ? animations.fadeIn : animations.fadeOut
         }`}
       />
+
       <ScreenBg bg={bg} isActive={isActive} stopAnimation={isMainPage} />
+
       <div className="screen-content">{children}</div>
     </div>
   );
