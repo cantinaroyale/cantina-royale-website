@@ -32,7 +32,12 @@ function UnityElement({
   const [isLoading, setIsLoading] = useState(true);
   const [instance, setInstance] = useState<any>(null);
   const randomize = (instance: any, intervalTime: number) => {
+   
+    if(intervalRef.current){
+      return 
+    }
     intervalRef.current = setInterval(() => {
+     
       try {
         if (instance) {
           instance.SendMessage("ShowcaseManager", "RandomiseCharacter");
@@ -43,18 +48,10 @@ function UnityElement({
     }, intervalTime);
   };
 
-  const killInstance = (instance: any) => {
-    if (!instance) {
-      return;
-    }
+  const killInstance = () => {
     clearTimeout(timeoutRef.current);
     clearInterval(intervalRef.current);
-
-    instance.Quit();
-    setInstance(null);
-    setTimeout(() => {
-      setIsLoading(true);
-    }, 400);
+    intervalRef.current = null
   };
 
   const createInstance = useCallback(async (instance: any, time: number) => {
@@ -72,6 +69,7 @@ function UnityElement({
   const startInstance = useCallback(
     (instance: any, time: number, interval: number) => {
       if (instance) {
+        randomize(instance, time)
         return;
       }
       if (canvasRef.current) {
@@ -85,17 +83,16 @@ function UnityElement({
 
   useEffect(() => {
     if (!play) {
-      killInstance(instance);
+      killInstance();
     } else if (play) {
       startInstance(instance, loadTimeout, intervalTime);
     }
   }, [instance, intervalTime, loadTimeout, play, startInstance]);
 
-  useEffect(() => {
-    return () => {
-      killInstance(instance);
-    };
-  }, [instance]);
+ 
+
+
+
 
   return (
     <Frame className={`unity ${className}`} id={containerId}>
