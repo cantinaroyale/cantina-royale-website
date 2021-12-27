@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2604029409
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 15c707958c6da0d2a47fae829bb46f55
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Textures/Ape/Body/Body_DmtPattern.psd
+Dependencies: []

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 4207468597
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae9b36faa879232e4dd2d0800e792935
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a9e0d6c75e0d3886012328bc098d44d2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Models/Ape/Mouth/Jovial.fbx
+Dependencies: []

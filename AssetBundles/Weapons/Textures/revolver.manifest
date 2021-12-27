@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2661339342
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b8b67f8e39d7b38710eb5d481ab80621
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Weapons/Textures/Revolver.psd
+Dependencies: []

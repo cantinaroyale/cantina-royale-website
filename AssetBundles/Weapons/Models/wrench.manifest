@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1485822050
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 17216322a88fdbc0e8e10771b164c3ca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e21293b2cfe26c7fc89f91a66cf489ba
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Weapons/Models/Wrench.FBX
+Dependencies: []

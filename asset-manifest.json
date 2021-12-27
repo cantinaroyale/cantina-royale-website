@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cantina-royale-website/static/css/main.4c1a870b.chunk.css",
-    "main.js": "/cantina-royale-website/static/js/main.2d7d1964.chunk.js",
-    "main.js.map": "/cantina-royale-website/static/js/main.2d7d1964.chunk.js.map",
+    "main.js": "/cantina-royale-website/static/js/main.1cebf61f.chunk.js",
+    "main.js.map": "/cantina-royale-website/static/js/main.1cebf61f.chunk.js.map",
     "runtime-main.js": "/cantina-royale-website/static/js/runtime-main.3ecef725.js",
     "runtime-main.js.map": "/cantina-royale-website/static/js/runtime-main.3ecef725.js.map",
     "static/css/2.28ecda3d.chunk.css": "/cantina-royale-website/static/css/2.28ecda3d.chunk.css",
@@ -76,6 +76,6 @@
     "static/css/2.28ecda3d.chunk.css",
     "static/js/2.c11216f8.chunk.js",
     "static/css/main.4c1a870b.chunk.css",
-    "static/js/main.2d7d1964.chunk.js"
+    "static/js/main.1cebf61f.chunk.js"
   ]
 }
