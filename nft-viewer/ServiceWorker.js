@@ -1,9 +1,9 @@
 const cacheName = "Phenomenon Games-NFT Viewer-0.1";
 const contentToCache = [
     "Build/WebGL.loader.js",
-    "Build/WebGL.framework.js.gz",
-    "Build/WebGL.data.gz",
-    "Build/WebGL.wasm.gz",
+    "Build/WebGL.framework.js",
+    "Build/WebGL.data",
+    "Build/WebGL.wasm",
 
 ];
 
