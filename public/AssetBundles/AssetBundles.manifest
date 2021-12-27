@@ -1,0 +1,187 @@
+ManifestFileVersion: 0
+CRC: 2286167070
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: json_data
+      Dependencies: {}
+    Info_1:
+      Name: ape_example
+      Dependencies: {}
+    Info_2:
+      Name: player/models/ape/allbodyparts
+      Dependencies: {}
+    Info_3:
+      Name: player/models/ape/animations/posing1
+      Dependencies: {}
+    Info_4:
+      Name: player/models/ape/body/defaultbody
+      Dependencies: {}
+    Info_5:
+      Name: player/models/ape/eyes/bored
+      Dependencies: {}
+    Info_6:
+      Name: player/models/ape/eyes/closed
+      Dependencies: {}
+    Info_7:
+      Name: player/models/ape/head/defaulthead
+      Dependencies: {}
+    Info_8:
+      Name: player/models/ape/headgear/vietnamhelmet
+      Dependencies: {}
+    Info_9:
+      Name: player/models/ape/headgear/ww2pilothelm
+      Dependencies: {}
+    Info_10:
+      Name: player/models/ape/legs/tacticalpants
+      Dependencies: {}
+    Info_11:
+      Name: player/models/ape/mouth/bored
+      Dependencies: {}
+    Info_12:
+      Name: player/models/ape/mouth/jovial
+      Dependencies: {}
+    Info_13:
+      Name: player/textures/ape/body/body_cheetahpattern
+      Dependencies: {}
+    Info_14:
+      Name: player/textures/ape/body/body_deathbotpattern
+      Dependencies: {}
+    Info_15:
+      Name: player/textures/ape/body/body_dmtpattern
+      Dependencies: {}
+    Info_16:
+      Name: player/textures/ape/body/body_noisepattern
+      Dependencies: {}
+    Info_17:
+      Name: player/textures/ape/body/body_robotpattern
+      Dependencies: {}
+    Info_18:
+      Name: player/textures/ape/body/body_zombiepattern
+      Dependencies: {}
+    Info_19:
+      Name: player/textures/ape/body/defaultbody
+      Dependencies: {}
+    Info_20:
+      Name: player/textures/ape/body/defaultbody_ch
+      Dependencies: {}
+    Info_21:
+      Name: player/textures/ape/eyes/bored
+      Dependencies: {}
+    Info_22:
+      Name: player/textures/ape/eyes/closed
+      Dependencies: {}
+    Info_23:
+      Name: player/textures/ape/head/defaulthead
+      Dependencies: {}
+    Info_24:
+      Name: player/textures/ape/headgear/vietnamhelmet
+      Dependencies: {}
+    Info_25:
+      Name: player/textures/ape/headgear/ww2pilothelm
+      Dependencies: {}
+    Info_26:
+      Name: player/textures/ape/legs/tacticalpants
+      Dependencies: {}
+    Info_27:
+      Name: player/textures/ape/mouth/bored
+      Dependencies: {}
+    Info_28:
+      Name: player/textures/ape/mouth/jovial
+      Dependencies: {}
+    Info_29:
+      Name: player/textures/matcaps/shinygold
+      Dependencies: {}
+    Info_30:
+      Name: player/textures/matcaps/trippy
+      Dependencies: {}
+    Info_31:
+      Name: weapons/models/axe
+      Dependencies: {}
+    Info_32:
+      Name: weapons/models/chainsaw
+      Dependencies: {}
+    Info_33:
+      Name: weapons/models/crossbow
+      Dependencies: {}
+    Info_34:
+      Name: weapons/models/flamer
+      Dependencies: {}
+    Info_35:
+      Name: weapons/models/grenadelauncher
+      Dependencies: {}
+    Info_36:
+      Name: weapons/models/hmg
+      Dependencies: {}
+    Info_37:
+      Name: weapons/models/knife
+      Dependencies: {}
+    Info_38:
+      Name: weapons/models/plasmacutter
+      Dependencies: {}
+    Info_39:
+      Name: weapons/models/revolver
+      Dependencies: {}
+    Info_40:
+      Name: weapons/models/rocketlauncher
+      Dependencies: {}
+    Info_41:
+      Name: weapons/models/shocker
+      Dependencies: {}
+    Info_42:
+      Name: weapons/models/shotgun
+      Dependencies: {}
+    Info_43:
+      Name: weapons/models/smg
+      Dependencies: {}
+    Info_44:
+      Name: weapons/models/spreadgun
+      Dependencies: {}
+    Info_45:
+      Name: weapons/models/wrench
+      Dependencies: {}
+    Info_46:
+      Name: weapons/textures/axe
+      Dependencies: {}
+    Info_47:
+      Name: weapons/textures/chainsaw
+      Dependencies: {}
+    Info_48:
+      Name: weapons/textures/crossbow
+      Dependencies: {}
+    Info_49:
+      Name: weapons/textures/flamer
+      Dependencies: {}
+    Info_50:
+      Name: weapons/textures/grenadelauncher
+      Dependencies: {}
+    Info_51:
+      Name: weapons/textures/hmg
+      Dependencies: {}
+    Info_52:
+      Name: weapons/textures/knife
+      Dependencies: {}
+    Info_53:
+      Name: weapons/textures/plasmacutter
+      Dependencies: {}
+    Info_54:
+      Name: weapons/textures/revolver
+      Dependencies: {}
+    Info_55:
+      Name: weapons/textures/rocketlauncher
+      Dependencies: {}
+    Info_56:
+      Name: weapons/textures/shocker
+      Dependencies: {}
+    Info_57:
+      Name: weapons/textures/shotgun
+      Dependencies: {}
+    Info_58:
+      Name: weapons/textures/smg
+      Dependencies: {}
+    Info_59:
+      Name: weapons/textures/spreadgun
+      Dependencies: {}
+    Info_60:
+      Name: weapons/textures/wrench
+      Dependencies: {}

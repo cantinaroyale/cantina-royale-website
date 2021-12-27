@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2007909658
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f353e4f5ee49b44e92c3edc99532c29b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Weapons/Textures/Shocker.psd
+Dependencies: []

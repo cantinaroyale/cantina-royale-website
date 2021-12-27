@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 1901874837
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0e68b14131075b245aa269d33b7bf769
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Textures/Ape/Legs/TacticalPants.psd
+Dependencies: []

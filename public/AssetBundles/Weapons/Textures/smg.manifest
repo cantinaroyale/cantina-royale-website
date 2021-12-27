@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3439375210
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 787b8e5f484658ac14637441ea3f1132
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Weapons/Textures/SMG.psd
+Dependencies: []

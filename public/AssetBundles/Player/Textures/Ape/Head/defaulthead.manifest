@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3852823295
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9697bce115388dde495abc6e2730a514
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Textures/Ape/Head/DefaultHead.psd
+Dependencies: []

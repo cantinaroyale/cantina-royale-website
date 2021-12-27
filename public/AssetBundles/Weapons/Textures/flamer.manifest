@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 4064381813
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1ac80762e61c91c1cf2ab9d759bc8b52
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Weapons/Textures/Flamer.psd
+Dependencies: []

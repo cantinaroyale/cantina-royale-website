@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 4206190423
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 881ba934e309fc77a737ef44ee97c101
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Textures/Ape/Headgear/WW2PilotHelm.psd
+Dependencies: []

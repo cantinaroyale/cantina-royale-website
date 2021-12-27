@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 2225886899
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 026b516fd4a9b56f05509a94a41d15ff
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/JSONData/Ape/LegsData.json
+- Assets/Resources/JSONData/Weapons/WeaponsData.json
+- Assets/Resources/JSONData/Ape/GlowColorData.json
+- Assets/Resources/JSONData/Ape/SkinColorData.json
+- Assets/Resources/JSONData/Ape/HeadgearData.json
+- Assets/Resources/JSONData/Ape/HeadData.json
+- Assets/Resources/JSONData/Ape/EarringsData.json
+- Assets/Resources/JSONData/Ape/MouthData.json
+- Assets/Resources/JSONData/SpeciesLinks.json
+- Assets/Resources/JSONData/Ape/BodyColorData.json
+- Assets/Resources/JSONData/Ape/EyesData.json
+- Assets/Resources/JSONData/Ape/BodyData.json
+- Assets/Resources/JSONData/ApeLinks.json
+- Assets/Resources/JSONData/Ape/BackgroundData.json
+- Assets/Resources/JSONData/Ape/LegsAccessoriesData.json
+Dependencies: []

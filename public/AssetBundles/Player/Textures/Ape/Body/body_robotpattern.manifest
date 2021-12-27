@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3247618590
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8c2bd54d19c0fdf7c5549901cf4982cc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Player/Textures/Ape/Body/Body_RobotPattern.psd
+Dependencies: []
