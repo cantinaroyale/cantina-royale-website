@@ -75,9 +75,13 @@ const screens: Screen[] = [
     component: Partners,
     img: images.partners.bg,
     overlay: images.partners.overlay,
-    name: "Partners and Backers",
+    name: "Team and Partners",
     id: uuidv4(),
   },
 ];
 
 export { screens };
+
+  
+
+

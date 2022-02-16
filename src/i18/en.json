@@ -1,13 +1,13 @@
 {
   "main": {
-    "gradiantTextLine1": "**The most Epic PVP & PVE Battle Royale**",
-    "gradiantTextLine2": "**game in dark space - Drink, Fight, Raid**",
-    "gradiantTextLine3": "**and Conquer!**"
+    "gradiantTextLine1": "**The first PVP & PVE Battle Royale**",
+    "gradiantTextLine2": "**game set in outer space with it's**",
+    "gradiantTextLine3": "**own Cantina Metaverse**"
   },
   "species": {
     "title": "Innumerable Alien Species",
-    "subtitle": "**Peculiar** and **Bizzare**, **Grotesque** and **Abnormal** Life forms from aound the Galaxy!",
-    "bottomText": "**All species** are fully playable as your in game charactaer to fight, raid and battle your way to **Prestige** and **Glory!**"
+    "subtitle": "**Peculiar** and **Bizzare**, **Grotesque** and **Abnormal** Life forms from around the Galaxy!",
+    "bottomText": "**All species** are fully playable as your in game character to fight, raid and battle your way to **Success** and **Glory!**"
   },
   "variations": {
     "title": "Head to Toe 3D NFT characters ",
@@ -16,20 +16,20 @@
   "pve": {
     "title": "PVE Game Mode -  Raid & Loot Gigantic Treasures!",
     "gradiantTextLine1": "**Skilled enough** to beat the defence systems",
-    "gradiantTextLine2": "and get **prosperous** via **Raids** ?"
+    "gradiantTextLine2": "and **succeed** through **Raids** ?"
   },
   "pvp": {
-    "title": "Multiplier PVP Game Mode - Battle Royale!",
-    "gradiantTextLine1": "**Fight & Battle** other **online**",
-    "gradiantTextLine2": "players to  **death!**"
+    "title": "Multiplayer PVP Game Mode - Battle Royale!",
+    "gradiantTextLine1": "**Fight** against other 16 players **online**",
+    "gradiantTextLine2": "in battles royale to the **death!**"
   },
   "scholarships": {
     "title": "Scholarship Programs ",
-    "subtitle": "**“Rent” 3D playable characters (NFTs) owned by others and start playing Cantina Royale for free, or rent your own NFTs and yield profit!**",
+    "subtitle": "**“Rent” 3D playable characters (NFTs) owned by others and start playing Cantina Royale for free, or trade your own NFTs and boost profit!**",
     "gradiantTextLine1": "**Scholarships** are made super simple",
     "gradiantTextLine2": "and **easy** via the Cantina Royale rental",
     "gradiantTextLine3": "**marketplace**",
-    "postTitle": "Scholership Program Medium Post",
+    "postTitle": "Scholarship Program Medium Post",
     "postText": "Coming soon…"
   },
   "apes": {
@@ -42,7 +42,7 @@
     "gradiantTextLine2": "**drink, fight, raid for honor and glory!**"
   },
   "partners": {
-    "title": "Partners and Backers",
+    "title": "Team and Partners",
     "community": "Community"
   }
 }
