@@ -71,13 +71,13 @@ const screens: Screen[] = [
     name: "3D playable NFTs",
     id: uuidv4(),
   },
-  {
-    component: Partners,
-    img: images.partners.bg,
-    overlay: images.partners.overlay,
-    name: "Team and Partners",
-    id: uuidv4(),
-  },
+  // {
+  //   component: Partners,
+  //   img: images.partners.bg,
+  //   overlay: images.partners.overlay,
+  //   name: "Team and Partners",
+  //   id: uuidv4(),
+  // },
 ];
 
 export { screens };

@@ -12,6 +12,7 @@ function Cantina({ isActive, bg, overlay }: ScreenComponentProps) {
       {/* <Curves show={isActive} /> */}
       <Title id="cantina-title" text={t("title")} isActive={isActive} />
       <div className="page-bottom-flex">
+        
         <div
           className={`gradiant-text ${
             isActive ? animations.slideInLeft : animations.slideOutLeft
