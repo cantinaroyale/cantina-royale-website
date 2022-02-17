@@ -2,14 +2,14 @@ import React from "react";
 import animations from "../../animations";
 import images from "../../images";
 import { socials } from "../../data";
-import { useTranslation } from "react-i18next";
+
 
 interface Props {
   showSoon?: boolean;
 }
 
 function Navbar({ showSoon }: Props) {
-  const { t } = useTranslation("cantina");
+  
   return (
     <nav className="navbar">
       <div className="navbar-flex">

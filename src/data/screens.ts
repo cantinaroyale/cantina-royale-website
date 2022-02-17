@@ -10,7 +10,7 @@ import {
   Scholarships,
   Apes,
 } from "../screens";
-import Partners from "../screens/Partners";
+// import Partners from "../screens/Partners";
 import Species from "../screens/Species";
 import { Screen } from "../types";
 
