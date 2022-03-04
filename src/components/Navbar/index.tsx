@@ -15,11 +15,12 @@ function Navbar({ showSoon }: Props) {
       <div className="navbar-flex">
         <img src={images.navbar.logo} alt="logo" className="navbar-logo" />
         {showSoon ? (
-          <img
-            src={images.navbar.date}
-            alt="date"
-            className={`${animations.fadeInRight} navbar-coming-soon animate__delay-0s`}
-          />
+          <></>
+          // <img
+          //   src={images.navbar.date}
+          //   alt="date"
+          //   className={`${animations.fadeInRight} navbar-coming-soon animate__delay-0s`}
+          // />
         ) : (
           <div
             id="partners"
