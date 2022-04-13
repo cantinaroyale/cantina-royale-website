@@ -2,8 +2,8 @@ import images from "../../images";
 
 const slides = [
   {
-    text: "Galactic Ape",
-    avatar: images.species.figure5,
+    text: "Space Ape",
+    avatar: images.species.SpaceApe,
     globe: images.species.globe3,
   },
   {

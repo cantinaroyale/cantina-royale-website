@@ -6,6 +6,7 @@ import figure2 from "../assets/images/home/species/figures/figure2.png";
 import figure3 from "../assets/images/home/species/figures/figure3.png";
 import figure4 from "../assets/images/home/species/figures/figure4.png";
 import figure5 from "../assets/images/home/species/figures/figure5.png";
+import SpaceApe from "../assets/images/home/species/figures/SpaceApe.png";
 
 import globe1 from "../assets/images/home/species/globes/globe1.png";
 import globe2 from "../assets/images/home/species/globes/globe2.png";
@@ -26,4 +27,5 @@ export {
   globe3,
   globe4,
   globe5,
+  SpaceApe
 };
