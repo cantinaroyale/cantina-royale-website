@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ffa4b619.chunk.css",
-    "main.js": "/static/js/main.9540c057.chunk.js",
-    "main.js.map": "/static/js/main.9540c057.chunk.js.map",
+    "main.js": "/static/js/main.755ffa72.chunk.js",
+    "main.js.map": "/static/js/main.755ffa72.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.44a968f1.js",
     "runtime-main.js.map": "/static/js/runtime-main.44a968f1.js.map",
     "static/css/2.28ecda3d.chunk.css": "/static/css/2.28ecda3d.chunk.css",
@@ -14,6 +14,7 @@
     "static/css/2.28ecda3d.chunk.css.map": "/static/css/2.28ecda3d.chunk.css.map",
     "static/css/main.ffa4b619.chunk.css.map": "/static/css/main.ffa4b619.chunk.css.map",
     "static/js/2.c11216f8.chunk.js.LICENSE.txt": "/static/js/2.c11216f8.chunk.js.LICENSE.txt",
+    "static/media/SpaceApe.63d19d57.png": "/static/media/SpaceApe.63d19d57.png",
     "static/media/animoca.2bcbaa92.svg": "/static/media/animoca.2bcbaa92.svg",
     "static/media/ape-1.0a7200dc.png": "/static/media/ape-1.0a7200dc.png",
     "static/media/ape-2.1d874e7f.png": "/static/media/ape-2.1d874e7f.png",
@@ -76,6 +77,6 @@
     "static/css/2.28ecda3d.chunk.css",
     "static/js/2.c11216f8.chunk.js",
     "static/css/main.ffa4b619.chunk.css",
-    "static/js/main.9540c057.chunk.js"
+    "static/js/main.755ffa72.chunk.js"
   ]
 }
