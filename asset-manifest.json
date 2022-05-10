@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffa4b619.chunk.css",
-    "main.js": "/static/js/main.755ffa72.chunk.js",
-    "main.js.map": "/static/js/main.755ffa72.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.44a968f1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.44a968f1.js.map",
+    "main.css": "/static/css/main.62fc705b.chunk.css",
+    "main.js": "/static/js/main.02909193.chunk.js",
+    "main.js.map": "/static/js/main.02909193.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4a01bd54.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4a01bd54.js.map",
     "static/css/2.28ecda3d.chunk.css": "/static/css/2.28ecda3d.chunk.css",
-    "static/js/2.c11216f8.chunk.js": "/static/js/2.c11216f8.chunk.js",
-    "static/js/2.c11216f8.chunk.js.map": "/static/js/2.c11216f8.chunk.js.map",
-    "static/js/3.45f1036e.chunk.js": "/static/js/3.45f1036e.chunk.js",
-    "static/js/3.45f1036e.chunk.js.map": "/static/js/3.45f1036e.chunk.js.map",
+    "static/js/2.52846b7a.chunk.js": "/static/js/2.52846b7a.chunk.js",
+    "static/js/2.52846b7a.chunk.js.map": "/static/js/2.52846b7a.chunk.js.map",
+    "static/js/3.fa34898a.chunk.js": "/static/js/3.fa34898a.chunk.js",
+    "static/js/3.fa34898a.chunk.js.map": "/static/js/3.fa34898a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.28ecda3d.chunk.css.map": "/static/css/2.28ecda3d.chunk.css.map",
-    "static/css/main.ffa4b619.chunk.css.map": "/static/css/main.ffa4b619.chunk.css.map",
-    "static/js/2.c11216f8.chunk.js.LICENSE.txt": "/static/js/2.c11216f8.chunk.js.LICENSE.txt",
+    "static/css/main.62fc705b.chunk.css.map": "/static/css/main.62fc705b.chunk.css.map",
+    "static/js/2.52846b7a.chunk.js.LICENSE.txt": "/static/js/2.52846b7a.chunk.js.LICENSE.txt",
     "static/media/SpaceApe.63d19d57.png": "/static/media/SpaceApe.63d19d57.png",
     "static/media/animoca.2bcbaa92.svg": "/static/media/animoca.2bcbaa92.svg",
     "static/media/ape-1.0a7200dc.png": "/static/media/ape-1.0a7200dc.png",
@@ -31,6 +31,7 @@
     "static/media/bg.f6d27902.jpg": "/static/media/bg.f6d27902.jpg",
     "static/media/bg.f7690e60.png": "/static/media/bg.f7690e60.png",
     "static/media/binance.bc6a2e42.svg": "/static/media/binance.bc6a2e42.svg",
+    "static/media/cantina_royale_logo.b6e90354.png": "/static/media/cantina_royale_logo.b6e90354.png",
     "static/media/chromia.8f1cbaae.svg": "/static/media/chromia.8f1cbaae.svg",
     "static/media/circle.e4c45efe.png": "/static/media/circle.e4c45efe.png",
     "static/media/close.da98409d.svg": "/static/media/close.da98409d.svg",
@@ -49,6 +50,7 @@
     "static/media/globe4.e7b079d6.png": "/static/media/globe4.e7b079d6.png",
     "static/media/hashed.270e4f54.svg": "/static/media/hashed.270e4f54.svg",
     "static/media/logo.b27aae3e.png": "/static/media/logo.b27aae3e.png",
+    "static/media/logo_cantina_royale_560.cf13ec6d.png": "/static/media/logo_cantina_royale_560.cf13ec6d.png",
     "static/media/mobile.5e2284f5.png": "/static/media/mobile.5e2284f5.png",
     "static/media/overlay.387bbaf4.png": "/static/media/overlay.387bbaf4.png",
     "static/media/overlay.6133f14e.png": "/static/media/overlay.6133f14e.png",
@@ -73,10 +75,10 @@
     "static/media/youtube.e1168388.svg": "/static/media/youtube.e1168388.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.44a968f1.js",
+    "static/js/runtime-main.4a01bd54.js",
     "static/css/2.28ecda3d.chunk.css",
-    "static/js/2.c11216f8.chunk.js",
-    "static/css/main.ffa4b619.chunk.css",
-    "static/js/main.755ffa72.chunk.js"
+    "static/js/2.52846b7a.chunk.js",
+    "static/css/main.62fc705b.chunk.css",
+    "static/js/main.02909193.chunk.js"
   ]
 }
