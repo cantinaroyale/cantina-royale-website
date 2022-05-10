@@ -47,14 +47,14 @@ const screens: Screen[] = [
     component: Pve,
     img: images.pve.bg,
     overlay: images.pve.overlay,
-    name: "PVE Game Mode",
+    name: "PVE Game Modes",
     id: uuidv4(),
   },
   {
     component: Pvp,
     img: images.pvp.bg,
     overlay: images.pvp.overlay,
-    name: "PVP Game Mode",
+    name: "PVP Game Modes",
     id: uuidv4(),
   },
   {
@@ -82,6 +82,6 @@ const screens: Screen[] = [
 
 export { screens };
 
-  
+
 
 

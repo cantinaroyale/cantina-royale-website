@@ -3,7 +3,15 @@
         max-width: 930px;
     }
 
+    .gradiant-text {
 
+        p {
+            background: -webkit-linear-gradient(0deg, #0182F9 0%, #FFFFFF 60%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 
     #ape-left-container {
         .ape-figure {

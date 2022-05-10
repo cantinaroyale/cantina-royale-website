@@ -35,6 +35,7 @@ function Pve({ isActive, bg, overlay }: ScreenComponentProps) {
         >
           <ReactMarkdown children={t("gradiantTextLine1")} />
           <ReactMarkdown children={t("gradiantTextLine2")} />
+          <ReactMarkdown children={t("gradiantTextLine3")} />
         </div>
 
         <Frame

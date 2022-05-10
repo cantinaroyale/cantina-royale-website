@@ -12,14 +12,15 @@ function Cantina({ isActive, bg, overlay }: ScreenComponentProps) {
       {/* <Curves show={isActive} /> */}
       <Title id="cantina-title" text={t("title")} isActive={isActive} />
       <div className="page-bottom-flex">
-        
         <div
           className={`gradiant-text ${
             isActive ? animations.slideInLeft : animations.slideOutLeft
           }`}
         >
           <ReactMarkdown children={t("gradiantTextLine1")} />
+          <br />
           <ReactMarkdown children={t("gradiantTextLine2")} />
+          <ReactMarkdown children={t("gradiantTextLine3")} />
         </div>
       </div>
     </Screen>

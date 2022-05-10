@@ -34,7 +34,7 @@ function AppLoader() {
         alt="loader"
       />
       <img
-        src={images.shared.appLoaderLogo}
+        src={images.shared.appLoaderLogoNew}
         className="app-loader-img"
         alt="loader"
       />

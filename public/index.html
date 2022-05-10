@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TF95BCG");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="https://cantinaroyale.io/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -18,18 +32,18 @@
       property="og:description"
       content="The first PVP & PVE Battle Royale game set in outer space with it's own Cantina Metaverse"
     />
-    <meta property="og:image" content="https://cantinaroyale.io/social.png" />
+    <meta property="og:image" content="%PUBLIC_URL%/cantina_royale_logo.png" />
 
     <meta
       property="og:image:secure_url"
-      content="https://cantinaroyale.io/social.png"
+      content="%PUBLIC_URL%/cantina_royale_logo.png"
     />
     <meta property="og:site_name" content="Cantina Royale" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="https://cantinaroyale.io" />
     <meta name="twitter:creator" content="" />
-    <meta name="twitter:image" content="https://cantinaroyale.io/social.png" />
-    <link rel="apple-touch-icon" href="https://cantinaroyale.io/logo192.png" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/cantina_royale_logo.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -62,6 +76,16 @@
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TF95BCG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 

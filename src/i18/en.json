@@ -1,45 +1,51 @@
 {
   "main": {
-    "gradiantTextLine1": "**The first PVP & PVE Battle Royale**",
-    "gradiantTextLine2": "**game set in outer space with it's**",
-    "gradiantTextLine3": "**own Cantina Metaverse**"
+    "gradiantTextLine1": "**Join the Play-to-Earn Battle Royale**",
+    "gradiantTextLine2": "**in Catina’s outer space for free!**",
+    "gradiantTextLine3": ""
   },
   "species": {
-    "title": "Innumerable Alien Species",
-    "subtitle": "**Peculiar** and **Bizzare**, **Grotesque** and **Abnormal** Life forms from around the Galaxy!",
-    "bottomText": "**All species** are fully playable as your in game character to fight, raid and battle your way to **Success** and **Glory!**"
+    "title": "**A Glimpse of the Innumerable Alien Warriors**",
+    "subtitle": "Choose your bounty hunters, freighter bums, smugglers, space pirates, or mercenaries to enter the galaxy!",
+    "bottomText": "**Backed by the blockchain, Cantina gives you complete ownership over your in-game characters to fight, raid, and battle your way to Riches and Glory!**"
   },
   "variations": {
-    "title": "Head to Toe 3D NFT characters ",
-    "subtitle": "Cantina Royale’s NFTs are all fully functionale playable 3D figures"
+    "title": "**Fully-modelled 3D NFT characters**",
+    "subtitle": "Take the galaxy down in a mission-based game mode with Cantina Royale’s fully functioning 3D NFT Characters!"
   },
   "pve": {
-    "title": "PVE Game Mode -  Raid & Loot Gigantic Treasures!",
-    "gradiantTextLine1": "**Skilled enough** to beat the defence systems",
-    "gradiantTextLine2": "and **succeed** through **Raids** ?"
+    "title": "The Raid Dungeon - PvE Game Modes",
+    "gradiantTextLine1": "Raid & loot great treasures and token",
+    "gradiantTextLine2": "rewards as you grapple with enemies,",
+    "gradiantTextLine3": "bandits and bots!"
   },
   "pvp": {
-    "title": "Multiplayer PVP Game Mode - Battle Royale!",
-    "gradiantTextLine1": "**Fight** against other 16 players **online**",
-    "gradiantTextLine2": "in battles royale to the **death!**"
+    "title": "Enter the Arena - PvP Game Modes",
+    "gradiantTextLine1": "Battle it out with other online players in 1v1,",
+    "gradiantTextLine2": "Team Deathmatch, Battle Royale, and",
+    "gradiantTextLine3": "more for great treasures!"
   },
   "scholarships": {
-    "title": "Scholarship Programs ",
-    "subtitle": "**“Rent” 3D playable characters (NFTs) owned by others and start playing Cantina Royale for free, or trade your own NFTs and boost profit!**",
-    "gradiantTextLine1": "**Scholarships** are made super simple",
-    "gradiantTextLine2": "and **easy** via the Cantina Royale rental",
-    "gradiantTextLine3": "**marketplace**",
+    "title": "NFT Lending Platform",
+    "subtitle": "**Lend or borrow a 3D playable character from NFT holders to earn a profit in Cantina Royale!**",
+    "gradiantTextLine1": "Powered by Verko’s Lending Platform, NFT",
+    "gradiantTextLine2": "owners can lease out their digital assets to",
+    "gradiantTextLine3": "players and split in-game rewards",
+    "gradiantTextLine4": "automatically.",
     "postTitle": "Scholarship Program Medium Post",
     "postText": "Coming soon…"
   },
   "apes": {
-    "title": "Intoducing our first playable 3D playable NFTs inspired by **Board Apes Yacht Club!**",
-    "subtitle": "Coming next - more famous loved NFT collections as 3D fully playable characters - choose your character and play! "
+    "title": "**Our 1st Bootstrapping Collection with Bored Ape Yacht Club (BAYC)**",
+    "subtitle": "Choose your Space Ape and play now! More collaborations are coming with other renowned NFT collections.",
+    "gradiantTextLine1": "Our 3D Modeling technologies allow NFT Interoperability",
+    "gradiantTextLine2": "into the Cantina universe."
   },
   "cantina": {
-    "title": "The Dark Space Cantina Royale Metaverse",
-    "gradiantTextLine1": "**Where the lowlifes of the Galaxy come to**",
-    "gradiantTextLine2": "**drink, fight, raid for honor and glory!**"
+    "title": "Cantina - No rules, no mercy, no hierarchy!",
+    "gradiantTextLine1": "**Join the rewarding sci-fi lowlife adventure for free in PvE and PVP modes!**",
+    "gradiantTextLine2": "**Cantina Royale is a tactical arcade shooter play-and-earn game built on the**",
+    "gradiantTextLine3": "**Verko Layer 2 utilizing the latest Metaverse Experience Framework.**"
   },
   "partners": {
     "title": "Team and Partners",

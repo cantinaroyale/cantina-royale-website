@@ -42,6 +42,16 @@ function Apes({ isActive, bg, overlay }: ScreenComponentProps) {
           }
         />
       </div>
+      <div className="page-bottom-flex">
+        <div
+          className={`gradiant-text ${
+            isActive ? `${animations.fadeInUp} ` : animations.fadeOutDown
+          }`}
+        >
+          <ReactMarkdown children={t("gradiantTextLine1")} />
+          <ReactMarkdown children={t("gradiantTextLine2")} />
+        </div>
+      </div>
     </Screen>
   );
 }
