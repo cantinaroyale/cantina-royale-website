@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Popup } from "..";
 import animations from "../../animations";
 import Frame from "../Frame";
-import Video from "../Video";
 
 interface Props {
   isActive: boolean;
@@ -11,7 +10,7 @@ interface Props {
   poster: string;
 }
 function VideoPopup({ isActive, src, close, poster }: Props) {
-  const [play, setPlay] = useState(false);
+  const [_, setPlay] = useState(false);
   useEffect(() => {
     const startVideo = async () => {
       setPlay(true);
@@ -37,6 +36,7 @@ function VideoPopup({ isActive, src, close, poster }: Props) {
       <Frame>
         {isActive && (
           <iframe
+            title={src}
             allow="autoplay"
             width="100%"
             height="100%"
