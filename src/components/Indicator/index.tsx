@@ -34,13 +34,13 @@ function Indicator() {
           </section>
         );
       })}
-      {/* <section
+      <section
         onClick={() => window.open("https://whitepaper.cantinaroyale.io")}
         className="indicator-section"
       >
         <button className="indicator-section-btn">Whitepaper</button>
         <Figure />
-      </section> */}
+      </section>
     </div>
   );
 }
