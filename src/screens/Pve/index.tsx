@@ -8,7 +8,6 @@ import Title from "../../components/Title";
 
 import images from "../../images";
 import { ScreenComponentProps } from "../../types";
-import videos from "../../videos";
 
 function Pve({ isActive, bg, overlay }: ScreenComponentProps) {
   const [showPopup, setShowPopup] = useState(false);
