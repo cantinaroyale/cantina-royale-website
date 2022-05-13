@@ -10,19 +10,19 @@ interface Props {
   poster: string;
 }
 function VideoPopup({ isActive, src, close, poster }: Props) {
-  const [play, setPlay] = useState(false);
-  useEffect(() => {
-    const startVideo = async () => {
-      setPlay(true);
-    };
-    if (isActive) {
-      startVideo();
-    }
-  }, [isActive]);
+  // const [play, setPlay] = useState(false);
+  // useEffect(() => {
+  //   const startVideo = async () => {
+  //     setPlay(true);
+  //   };
+  //   if (isActive) {
+  //     startVideo();
+  //   }
+  // }, [isActive]);
 
   const onClose = () => {
-    play;
-    setPlay(false);
+    // play;
+    // setPlay(false);
     close();
   };
   return (
