@@ -10,7 +10,7 @@ interface Props {
   poster: string;
 }
 function VideoPopup({ isActive, src, close, poster }: Props) {
-  const [_, setPlay] = useState(false);
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     const startVideo = async () => {
       setPlay(true);
@@ -21,6 +21,7 @@ function VideoPopup({ isActive, src, close, poster }: Props) {
   }, [isActive]);
 
   const onClose = () => {
+    play;
     setPlay(false);
     close();
   };
