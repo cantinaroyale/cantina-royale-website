@@ -28,7 +28,11 @@ function Popup({
       <div className="popup-overlay"></div>
       <div className={`popup-content ${contentClassName}`}>
         {blur && <div className="popup-blur"></div>}
-        <button className="popup-content-close" onClick={close}>
+        <button
+          className="popup-content-close"
+          onClick={close}
+          style={{ zIndex: 1005 }}
+        >
           <img src={images.shared.close} alt="close" />
         </button>
         {children}

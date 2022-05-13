@@ -16,7 +16,7 @@ function Pvp({ isActive, bg, overlay }: ScreenComponentProps) {
     <Screen id="pvp" isActive={isActive} overlay={overlay} bg={bg}>
       <VideoPopup
         isActive={showPopup}
-        src={videos.mainVideo}
+        src={"OICGUdHnXfc"}
         poster={images.main.bg}
         close={() => setShowPopup(false)}
       />
@@ -44,7 +44,7 @@ function Pvp({ isActive, bg, overlay }: ScreenComponentProps) {
           onClick={() => setShowPopup(true)}
         >
           <img
-            src={images.pvp.videoPreview}
+            src={images.shared.appLoaderBg}
             className="video-preview-img"
             alt="video"
           />

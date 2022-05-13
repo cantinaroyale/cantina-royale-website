@@ -18,8 +18,8 @@ function Pve({ isActive, bg, overlay }: ScreenComponentProps) {
     <Screen id="pve" isActive={isActive} overlay={overlay} bg={bg}>
       <VideoPopup
         isActive={showPopup}
-        src={videos.mainVideo}
-        poster={images.main.bg}
+        src={"0jFEsWajrOs"}
+        poster={images.shared.appLoaderBg}
         close={() => setShowPopup(false)}
       />
 
@@ -46,7 +46,7 @@ function Pve({ isActive, bg, overlay }: ScreenComponentProps) {
           onClick={() => setShowPopup(true)}
         >
           <img
-            src={images.pve.videoPreview}
+            src={images.shared.appLoaderBg}
             className="video-preview-img"
             alt="video"
           />

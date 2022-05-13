@@ -35,7 +35,16 @@ function VideoPopup({ isActive, src, close, poster }: Props) {
       contentClassName={`${animations.fadeInDown} animate__faster`}
     >
       <Frame>
-        <Video play={play} poster={poster} src={src} />
+        {isActive && (
+          <iframe
+            allow="autoplay"
+            width="100%"
+            height="100%"
+            frameBorder={"0"}
+            src={`https://www.youtube.com/embed/${src}?autoplay=1&cc_load_policy=1&controls=0`}
+          ></iframe>
+        )}
+        {/* <Video play={play} poster={poster} src={src} /> */}
       </Frame>
     </Popup>
   );

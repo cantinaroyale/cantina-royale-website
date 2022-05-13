@@ -3,8 +3,8 @@
 
 
     .popup-content {
-        max-width: 1150px;
-        max-height: 780px;
+        max-width: 865px;
+        max-height: 530px;
         width: calc(100% - 100px);
         height: calc(100% - 100px);
 
@@ -39,8 +39,8 @@
 @media only screen and (max-width: $mobile) {
     .video-popup {
         .popup-content {
-            width: calc(100% - 10px);
-            height: calc(100% - 10px);
+            width: calc(100% - 50px);
+            height: 50%;   //calc(100% - 10px);
             max-height: unset;
 
             .frame {

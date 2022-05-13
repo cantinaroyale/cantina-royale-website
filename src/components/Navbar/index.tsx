@@ -2,16 +2,20 @@ import React from "react";
 // import animations from "../../animations";
 import images from "../../images";
 import { socials } from "../../data";
+import { useStore } from "../../store";
 
 interface Props {
   showSoon?: boolean;
 }
 
 function Navbar({ showSoon }: Props) {
+  const { selectScreen } = useStore();
   return (
     <nav className="navbar">
       <div className="navbar-flex">
-        <img src={images.navbar.newLogo} alt="logo" className="navbar-logo" />
+        <button onClick={() => selectScreen(0)}>
+          <img src={images.navbar.newLogo} alt="logo" className="navbar-logo" />
+        </button>
         {showSoon ? (
           <></>
         ) : (
