@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import { Popup } from "..";
 import animations from "../../animations";
 import Frame from "../Frame";
