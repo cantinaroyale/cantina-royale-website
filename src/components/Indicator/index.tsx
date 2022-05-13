@@ -41,6 +41,7 @@ function Indicator() {
         <button className="indicator-section-btn">Whitepaper</button>
         <Figure />
       </section>
+      
     </div>
   );
 }
