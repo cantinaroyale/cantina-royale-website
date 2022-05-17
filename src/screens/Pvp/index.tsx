@@ -43,7 +43,7 @@ function Pvp({ isActive, bg, overlay }: ScreenComponentProps) {
           onClick={() => setShowPopup(true)}
         >
           <img
-            src={images.shared.appLoaderBg}
+            src={images.shared.videoPVE}
             className="video-preview-img"
             alt="video"
           />
