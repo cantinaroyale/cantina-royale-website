@@ -24,6 +24,7 @@ function Navbar({ showSoon }: Props) {
           //   alt="date"
           //   className={`${animations.fadeInRight} navbar-coming-soon animate__delay-0s`}
           // />
+
           <div
             id="partners"
             style={{
@@ -34,6 +35,11 @@ function Navbar({ showSoon }: Props) {
             <div className="partners-community">
               {/* <h3 className="partners-community-title">{t("community")}</h3> */}
               <ul className="partners-community-list">
+                {/* <li  className="partners-community-list-item" id="whitepaper">
+                  <a id="whitepaper-btn" href={""} target="_blank" rel="noreferrer">
+                    Whitepaper
+                  </a>
+                </li> */}
                 {socials.map((social, index) => {
                   return (
                     <li key={index} className="partners-community-list-item">

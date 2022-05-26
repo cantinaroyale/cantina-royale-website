@@ -10,7 +10,7 @@ import {
   Scholarships,
   Apes,
 } from "../screens";
-// import Partners from "../screens/Partners";
+import Partners from "../screens/Partners";
 import Species from "../screens/Species";
 import { Screen } from "../types";
 
@@ -71,13 +71,13 @@ const screens: Screen[] = [
     name: "3D playable NFTs",
     id: uuidv4(),
   },
-  // {
-  //   component: Partners,
-  //   img: images.partners.bg,
-  //   overlay: images.partners.overlay,
-  //   name: "Team and Partners",
-  //   id: uuidv4(),
-  // },
+  {
+    component: Partners,
+    img: images.partners.bg,
+    overlay: images.partners.overlay,
+    name: "Partners and Investors",
+    id: uuidv4(),
+  },
 ];
 
 export { screens };

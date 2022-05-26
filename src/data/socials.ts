@@ -7,8 +7,8 @@ const socials = [
   },
 
   {
-    image: images.socials.youtube,
-    url: "https://youtube.com/channel/UCD_zqrrmm9gNBggeVpsMY8g",
+    image: images.socials.telegram,
+    url: "https://t.me/CantinaRoyale",
   },
   {
     image: images.socials.twitter,

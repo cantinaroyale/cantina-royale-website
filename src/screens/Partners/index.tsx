@@ -9,18 +9,25 @@ function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
   return (
     <Screen id="partners" isActive={isActive} overlay={overlay} bg={bg}>
       <Title text={t("title")} isActive={isActive} />
-
-      <ul className="partners-list">
-        {partners.map((img, index) => {
-          return (
-            <li className="partners-list-item" key={index}>
-              <img src={img} alt="" />
-            </li>
-          );
-        })}
-      </ul>
-
-      <div className="partners-community">
+      <div className="partners-box">
+        <ul className="partners-list">
+          {partners.map((img, index) => {
+            return (
+              <li className="partners-list-item" key={index}>
+                <img
+                  src={img}
+                  alt=""
+                  style={{
+                    filter:
+                      "invert(1) brightness(100)  contrast(100%)",
+                  }}
+                />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      {/* <div className="partners-community">
         <h3 className="partners-community-title">{t("community")}</h3>
         <ul className="partners-community-list">
           {socials.map((social, index) => {
@@ -33,7 +40,7 @@ function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </Screen>
   );
 }
