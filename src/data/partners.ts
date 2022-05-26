@@ -1,4 +1,4 @@
-import images from "../images";
+// import images from "../images";
 import logo1 from "../assets/images/home/SVG/1.svg"
 import logo2 from "../assets/images/home/SVG/2.svg"
 import logo3 from "../assets/images/home/SVG/3.svg"

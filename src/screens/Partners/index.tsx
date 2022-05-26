@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Screen } from "../../components";
 import Title from "../../components/Title";
-import { partners, socials } from "../../data";
+import { partners } from "../../data";
 import { ScreenComponentProps } from "../../types";
 
 function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
@@ -18,8 +18,7 @@ function Partners({ isActive, bg, overlay }: ScreenComponentProps) {
                   src={img}
                   alt=""
                   style={{
-                    filter:
-                      "invert(1) brightness(100)  contrast(100%)",
+                    filter: "invert(1) brightness(100)  contrast(100%)",
                   }}
                 />
               </li>
