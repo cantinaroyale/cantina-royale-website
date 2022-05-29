@@ -3,7 +3,7 @@ import images from "../images";
 const socials = [
   {
     image: images.socials.discord,
-    url: "https://discord.gg/txzZHB85tY",
+    url: "https://discord.gg/cantinaroyale",
   },
 
   {
