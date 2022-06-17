@@ -19,6 +19,9 @@ function Navbar({ showSoon }: Props) {
         {showSoon ? (
           <></>
         ) : (
+          // <button className="navbar-ido-btn">
+          //   <p>Join the IDO</p>
+          // </button>
           // <img
           //   src={images.navbar.date}
           //   alt="date"

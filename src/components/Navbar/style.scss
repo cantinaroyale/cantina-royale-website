@@ -33,6 +33,18 @@
   }
 
 
+  &-ido-btn {
+    border-radius: 10px;
+    margin-right: 44px;
+    padding: 14px 40px;
+    background: linear-gradient( #ffa913, #f29b31,#fe5700 );
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-shadow: 0px 1px 8px #000000;
+    }
+  }
 
   &-coming-soon {
     width: 230px;
