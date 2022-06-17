@@ -38,6 +38,7 @@
     "react-markdown": "^7.1.1",
     "react-modal-video": "^1.2.8",
     "react-resize-detector": "^6.7.6",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.3",
     "react-scroll-wheel-handler": "^2.1.0",
     "react-use-scroll-direction": "^0.1.0",
