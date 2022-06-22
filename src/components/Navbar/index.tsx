@@ -21,6 +21,7 @@ function Navbar({ showSoon }: Props) {
             className="navbar-ido-btn"
             href="https://maiarlaunchpad.com/cantina-royale"
             target="_blank"
+            rel="noreferrer"
           >
             <p>Join the IDO</p>
           </a>
