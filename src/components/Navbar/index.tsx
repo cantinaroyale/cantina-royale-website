@@ -17,11 +17,14 @@ function Navbar({ showSoon }: Props) {
           <img src={images.navbar.newLogo} alt="logo" className="navbar-logo" />
         </button>
         {showSoon ? (
-          <></>
+          <a
+            className="navbar-ido-btn"
+            href="https://maiarlaunchpad.com/cantina-royale"
+            target="_blank"
+          >
+            <p>Join the IDO</p>
+          </a>
         ) : (
-          // <button className="navbar-ido-btn">
-          //   <p>Join the IDO</p>
-          // </button>
           // <img
           //   src={images.navbar.date}
           //   alt="date"
