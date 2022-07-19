@@ -19,11 +19,11 @@ function Navbar({ showSoon }: Props) {
         {showSoon ? (
           <a
             className="navbar-ido-btn"
-            href="https://maiarlaunchpad.com/cantina-royale"
+            href="https://igo.verko.io/cantinaroyale"
             target="_blank"
             rel="noreferrer"
           >
-            <p>Join the IDO</p>
+            <p>Join the IGO</p>
           </a>
         ) : (
           // <img
