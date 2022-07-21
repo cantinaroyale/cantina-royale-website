@@ -19,7 +19,7 @@ function Navbar({ showSoon }: Props) {
         {showSoon ? (
           <a
             className="navbar-ido-btn"
-            href="https://igo.verko.io/cantinaroyale"
+            href="https://igo.verko.io/cantina-royale"
             target="_blank"
             rel="noreferrer"
           >
